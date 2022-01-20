@@ -1,0 +1,710 @@
+{
+  "0.47R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2754"
+  },
+  "1R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2244"
+  },
+  "1.2R": {
+    "desc": "1/4W",
+    "SKU": "A-2576"
+  },
+  "1.3R": {
+    "desc": "1/4W",
+    "SKU": "A-2755"
+  },
+  "1.5R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2316"
+  },
+  "1.6R": {
+    "desc": "1/4W",
+    "SKU": "A-2756"
+  },
+  "1.8R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2757"
+  },
+  "2R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2317"
+  },
+  "2.2R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2600"
+  },
+  "2.4R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2601"
+  },
+  "2.7R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2602"
+  },
+  "3R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2318"
+  },
+  "3.3R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2189"
+  },
+  "3.6R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2758"
+  },
+  "3.9R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2311"
+  },
+  "4.3R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2319"
+  },
+  "4.7R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2308"
+  },
+  "5.1R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2320"
+  },
+  "5.6R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2603"
+  },
+  "6.2R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2321"
+  },
+  "6.8R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2322"
+  },
+  "7.5R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2344"
+  },
+  "8.2R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2309"
+  },
+  "10R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2198"
+  },
+  "11R": {
+    "desc": "1/4W",
+    "SKU": "A-2314"
+  },
+  "12R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2289"
+  },
+  "15R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2305"
+  },
+  "16R": {
+    "desc": "1/4W",
+    "SKU": "A-2614"
+  },
+  "18R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2615"
+  },
+  "20R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2616"
+  },
+  "22R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2345"
+  },
+  "24R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2617"
+  },
+  "27R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2618"
+  },
+  "30R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2619"
+  },
+  "33R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2286"
+  },
+  "36R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2765"
+  },
+  "39R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2306"
+  },
+  "43R": {
+    "desc": "1/4W",
+    "SKU": "A-2759"
+  },
+  "47R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2190"
+  },
+  "51R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2760"
+  },
+  "56R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2604"
+  },
+  "62R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2761"
+  },
+  "68R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2346"
+  },
+  "75R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2193"
+  },
+  "82R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2280"
+  },
+  "91R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2762"
+  },
+  "100R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2245"
+  },
+  "102R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2302"
+  },
+  "110R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2605"
+  },
+  "120R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2324"
+  },
+  "130R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2347"
+  },
+  "150R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2199"
+  },
+  "160R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2763"
+  },
+  "180R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2278"
+  },
+  "200R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2620"
+  },
+  "220R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2246"
+  },
+  "240R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2764"
+  },
+  "270R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2283"
+  },
+  "300R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2766"
+  },
+  "330R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2325"
+  },
+  "360R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2348"
+  },
+  "390R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2315"
+  },
+  "430R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2767"
+  },
+  "470R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2247"
+  },
+  "510R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2621"
+  },
+  "560R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2282"
+  },
+  "620R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2326"
+  },
+  "680R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2281"
+  },
+  "750R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2622"
+  },
+  "820R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2323"
+  },
+  "910R": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2623"
+  },
+  "1K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2200"
+  },
+  "1.2K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2201"
+  },
+  "1.3K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2624"
+  },
+  "1.5K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2202"
+  },
+  "1.6K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2625"
+  },
+  "1.8K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2340"
+  },
+  "2K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2307"
+  },
+  "2.2K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2341"
+  },
+  "2.4K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2606"
+  },
+  "2.7K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2626"
+  },
+  "3K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2349"
+  },
+  "3.3K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2607"
+  },
+  "3.6K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2350"
+  },
+  "3.9K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2312"
+  },
+  "4.3K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2627"
+  },
+  "4.7K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2310"
+  },
+  "5.1K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2188"
+  },
+  "5.6K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2351"
+  },
+  "6.2K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2768"
+  },
+  "6.8K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2328"
+  },
+  "7.5K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2769"
+  },
+  "8.2K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2337"
+  },
+  "9.1K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2770"
+  },
+  "10K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2203"
+  },
+  "10.1K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2298"
+  },
+  "11K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2204"
+  },
+  "11.8K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2297"
+  },
+  "12K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2327"
+  },
+  "12.4K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2301"
+  },
+  "13K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2205"
+  },
+  "13.3K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2296"
+  },
+  "15K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2182"
+  },
+  "16K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2206"
+  },
+  "17.8K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2228"
+  },
+  "18K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2207"
+  },
+  "20K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2339"
+  },
+  "22K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2284"
+  },
+  "24K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2771"
+  },
+  "27K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2772"
+  },
+  "30K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2608"
+  },
+  "33K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2290"
+  },
+  "36K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2773"
+  },
+  "39K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2313"
+  },
+  "43K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2774"
+  },
+  "47K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2279"
+  },
+  "51K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2775"
+  },
+  "56K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2191"
+  },
+  "62K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2628"
+  },
+  "68K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2334"
+  },
+  "75K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2629"
+  },
+  "82K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2338"
+  },
+  "91K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2776"
+  },
+  "100K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2248"
+  },
+  "102K": {
+    "desc": "1/4W",
+    "SKU": "A-2300"
+  },
+  "110K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2208"
+  },
+  "113K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2293"
+  },
+  "118K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2288"
+  },
+  "120K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2209"
+  },
+  "130K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2352"
+  },
+  "150K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2210"
+  },
+  "160K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2777"
+  },
+  "180K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2353"
+  },
+  "200K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2630"
+  },
+  "220K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2329"
+  },
+  "240K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2631"
+  },
+  "270K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2179"
+  },
+  "300K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2632"
+  },
+  "330K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2330"
+  },
+  "360K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2778"
+  },
+  "390K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2354"
+  },
+  "392K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-3877"
+  },
+  "422K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-3878"
+  },
+  "430K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2779"
+  },
+  "470K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2180"
+  },
+  "510K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2331"
+  },
+  "560K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2332"
+  },
+  "620K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2780"
+  },
+  "680K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2192"
+  },
+  "750K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2633"
+  },
+  "820K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2333"
+  },
+  "910K": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2781"
+  },
+  "1M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2277"
+  },
+  "1.2M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2634"
+  },
+  "1.3M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2782"
+  },
+  "1.5M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2783"
+  },
+  "1.6M": {
+    "desc": "1/4W",
+    "SKU": "A-2784"
+  },
+  "1.8M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2785"
+  },
+  "2M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2609"
+  },
+  "2.2M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2610"
+  },
+  "2.4M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2786"
+  },
+  "2.7M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2355"
+  },
+  "3M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2787"
+  },
+  "3.3M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2356"
+  },
+  "3.6M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2788"
+  },
+  "3.9M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2635"
+  },
+  "4.3M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2789"
+  },
+  "4.7M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2357"
+  },
+  "5.1M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2790"
+  },
+  "5.6M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2611"
+  },
+  "6.2M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2791"
+  },
+  "6.8M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2612"
+  },
+  "7.5M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2613"
+  },
+  "8.2M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2792"
+  },
+  "9.1M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2636"
+  },
+  "10M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2287"
+  },
+  "11M": {
+    "desc": "1/4W Royal",
+    "SKU": "A-2304"
+  }
+}

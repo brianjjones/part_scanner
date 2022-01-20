@@ -5,6 +5,7 @@ import pytesseract
 from pytesseract import Output
 import cv2
 import json
+import csv
 
 def mergeResults(newRes, totalRes):
     for i in newRes:
@@ -36,8 +37,39 @@ def findHighest(lst):
         count += 1
     return foundParts
 
+def makeCsv(partList, base):
+    csvFile = open(base + ".csv","w")
+    manualFile = open(base + ".manual","w")
 
+    for i in partList.keys():
+        if i == "res":
+            jsonFile = open("res.json")
+            # skuFile = open("res.json")
+        elif i == "cap":
+            jsonFile = open("cap.json")
+            # skuFile = "cap.json"
+        else:
+            return 0
 
+        skuFile = json.load(jsonFile)
+        print(skuFile)
+        # data = json.loads(skuFile)
+        # elif i == "trans":
+        #     skuFile = "singleTrans.csv"
+
+        for j in partList[i].keys():
+            print(i, j)
+            if j in skuFile:
+                sku = skuFile[j]["SKU"]
+                qty = partList[i][j]
+                # Resistors have to be ordered in packs of 10
+                if i == "res" and qty % 10 != 0:
+                    qty += 10 - (qty % 10)
+                # csvfile.write("%s, %s\n" % (key, totalParts[key]))
+                # TODO BJONES min number of resistors or caps is 10. Is caps 10?!
+                csvFile.write("%s,%s\n" % (sku, qty))
+            else:
+                manualFile.write("%s,%s\n" % (j, partList[i][j]))
 
 def findText(imgFile):
     foundWords = {}
@@ -57,6 +89,10 @@ def findText(imgFile):
         txt_len = len(jdata["text"])
 
         for i in range(n_boxes):
+            # Make all text upper case for sanity
+            jdata["text"][i] = jdata["text"][i].upper()
+            # Make all , == .
+            jdata["text"][i] = jdata["text"][i].replace(',', '.')
             resLen = len(j["results"]["res"])
             capLen = len(j["results"]["cap"])
             transLen = len(j["results"]["trans"])
@@ -71,13 +107,13 @@ def findText(imgFile):
 
         # TODO might add a $ to say it has to end after nF ?
             #r"^\d*[.,]?\d*$"
-            j["results"]["res"] += re.findall("\d+[.,]?\d*[rR]", jdata["text"][i])
-            j["results"]["res"] += re.findall("\d+[.,]?\d*[kK]", jdata["text"][i])
-            j["results"]["res"] += re.findall("\d+[.,]?\d*[mM]", jdata["text"][i])
+            j["results"]["res"] += re.findall("\d+[.,]?\d*[R]", jdata["text"][i])
+            j["results"]["res"] += re.findall("\d+[.,]?\d*[K]", jdata["text"][i])
+            j["results"]["res"] += re.findall("\d+[.,]?\d*[M]", jdata["text"][i])
 
-            j["results"]["cap"] += re.findall("\d+[.,]?\d*u[fF]", jdata["text"][i])
-            j["results"]["cap"] += re.findall("\d+[.,]?\d*n[fF]", jdata["text"][i])
-            j["results"]["cap"] += re.findall("\d+[.,]?\d*p[fF]", jdata["text"][i])
+            j["results"]["cap"] += re.findall("\d+[.,]?\d*U[F]", jdata["text"][i])
+            j["results"]["cap"] += re.findall("\d+[.,]?\d*N[F]", jdata["text"][i])
+            j["results"]["cap"] += re.findall("\d+[.,]?\d*P[F]", jdata["text"][i])
 
             # TODO add a check to see if either res or cap succeeded. Only add to possible if this word is not
             # a part for sure.
@@ -85,15 +121,15 @@ def findText(imgFile):
             # Check if matched list has grown, if not check for possible resistors
             if len(j["results"]["res"]) == resLen:
 
-                j["results"]["posRes"] += re.findall(r"(\b.{1,4}[rR]\b)", jdata["text"][i])
-                j["results"]["posRes"] += re.findall(r"(\b.{1,4}[kK]\b)", jdata["text"][i])
-                j["results"]["posRes"] += re.findall(r"(\b.{1,4}[mM]\b)", jdata["text"][i])
+                j["results"]["posRes"] += re.findall(r"(\b.{1,4}[R]\b)", jdata["text"][i])
+                j["results"]["posRes"] += re.findall(r"(\b.{1,4}[K]\b)", jdata["text"][i])
+                j["results"]["posRes"] += re.findall(r"(\b.{1,4}[M]\b)", jdata["text"][i])
 
                 if len(j["results"]["posRes"]) > posResLen:
                     #TODO don't do this work a second time just to have the text that matchs
-                    newPosRes = re.findall(r"(\b.{1,4}[rR]\b)", jdata["text"][i])
-                    newPosRes += re.findall(r"(\b.{1,4}[kK]\b)", jdata["text"][i])
-                    newPosRes += re.findall(r"(\b.{1,4}[mM]\b)", jdata["text"][i])
+                    newPosRes = re.findall(r"(\b.{1,4}[R]\b)", jdata["text"][i])
+                    newPosRes += re.findall(r"(\b.{1,4}[K]\b)", jdata["text"][i])
+                    newPosRes += re.findall(r"(\b.{1,4}[M]\b)", jdata["text"][i])
                     matched = "posRes"
             else:
                 matched = "res"
@@ -101,9 +137,9 @@ def findText(imgFile):
             # Check if matched list has grown, if not check for possible caps
             if len(j["results"]["cap"]) == capLen:
 
-                j["results"]["posCap"] += re.findall(r"\b(.{1,4}u[fF]\b)", jdata["text"][i])
-                j["results"]["posCap"] += re.findall(r"\b(.{1,4}n[fF]\b)", jdata["text"][i])
-                j["results"]["posCap"] += re.findall(r"\b(.{1,4}p[fF]\b)", jdata["text"][i])
+                j["results"]["posCap"] += re.findall(r"\b(.{1,4}U[F]\b)", jdata["text"][i])
+                j["results"]["posCap"] += re.findall(r"\b(.{1,4}N[F]\b)", jdata["text"][i])
+                j["results"]["posCap"] += re.findall(r"\b(.{1,4}P[F]\b)", jdata["text"][i])
                 if len(j["results"]["posCap"]) > posCapLen:
                     matched = "posCap"
             else:
@@ -137,8 +173,8 @@ def findText(imgFile):
         j["results"]["posCap"] = sortlist(j["results"]["posCap"])
 
     #TODO make it a command line arg to show the images or not
-    cv2.imshow('img', img)
-    cv2.waitKey(0)
+    # cv2.imshow('img', img)
+    # cv2.waitKey(0)
 
     return findHighest(dataArr)
 
@@ -150,7 +186,10 @@ if len(sys.argv) < 3:
     sys.exit("Argument format is: output.txt input.png input2.png ...")
     exit
 
-file1 = open(sys.argv[1],"w")
+baseFilename = sys.argv[1]
+textFile = open(baseFilename + ".txt","w")
+
+
 
 imgFiles = sys.argv[2:]
 print("Image files == ", imgFiles)
@@ -169,29 +208,36 @@ for i in imgFiles:
     resultDict = findText(img)
     mergeResults(resultDict, totalParts)
 
-if len(totalParts["res"]) != 0:
-    file1.write("Resistors = ")
-    file1.write(json.dumps(totalParts['res']))
-    file1.write("\n\n")
-if len(totalParts["cap"]) != 0:
-    file1.write("Capacitors = ")
-    file1.write(json.dumps(totalParts['cap']))
-    file1.write("\n\n")
-if len(totalParts["trans"]) != 0:
-    file1.write("Transistors = ")
-    file1.write(json.dumps(totalParts['trans']))
-    file1.write("\n\n")
+# with open(baseFilename + ".csv","w") as csvfile:
+#     for key in totalParts.keys():
+#         csvfile.write("%s, %s\n" % (key, totalParts[key]))
+# csvFile.write(json.dumps(totalParts))
 
-file1.write("\n\n")
+makeCsv(totalParts, baseFilename)
+
+if len(totalParts["res"]) != 0:
+    textFile.write("Resistors = ")
+    textFile.write(json.dumps(totalParts['res']))
+    textFile.write("\n\n")
+if len(totalParts["cap"]) != 0:
+    textFile.write("Capacitors = ")
+    textFile.write(json.dumps(totalParts['cap']))
+    textFile.write("\n\n")
+if len(totalParts["trans"]) != 0:
+    textFile.write("Transistors = ")
+    textFile.write(json.dumps(totalParts['trans']))
+    textFile.write("\n\n")
+
+textFile.write("\n\n")
 
 if len(totalParts["posRes"]) != 0:
-    file1.write("Possible Resistors = ")
-    file1.write(json.dumps(totalParts['posRes']))
-    file1.write("\n\n")
+    textFile.write("Possible Resistors = ")
+    textFile.write(json.dumps(totalParts['posRes']))
+    textFile.write("\n\n")
 
 if len(totalParts["posCap"]) != 0:
-    file1.write("Possible Capacitors = ")
-    file1.write(json.dumps(totalParts['posCap']))
-    file1.write("\n\n")
+    textFile.write("Possible Capacitors = ")
+    textFile.write(json.dumps(totalParts['posCap']))
+    textFile.write("\n\n")
 
-file1.close()
+textFile.close()

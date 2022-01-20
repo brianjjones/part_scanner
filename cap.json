@@ -1,0 +1,327 @@
+{
+  "47UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-1080",
+    "ALT": ""
+  },
+  "0.1UF": {
+    "desc": "100V JB",
+    "SKU": "A-1087",
+    "ALT": ""
+  },
+  "0.22UF": {
+    "desc": "105C Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-4512",
+    "ALT": ""
+  },
+  "0.33UF": {
+    "desc": "85C Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-4678",
+    "ALT": "A-3942"
+  },
+  "0.47UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-1071",
+    "ALT": "A-4516"
+  },
+  "1UF": {
+    "desc": "105C Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-4507",
+    "ALT": ""
+  },
+  "2.2UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-1066",
+    "ALT": "A-4510"
+  },
+  "3.3UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-970",
+    "ALT": ""
+  },
+  "4.7UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-975",
+    "ALT": ""
+  },
+  "10UF": {
+    "desc": "85C Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-3931",
+    "ALT": ""
+  },
+  "22UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-973",
+    "ALT": ""
+  },
+  "33UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x12mm",
+    "SKU": "A-1082",
+    "ALT": ""
+  },
+  "100UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 5x11mm",
+    "SKU": "A-972",
+    "ALT": ""
+  },
+  "120UF": {
+    "desc": "105C Aluminum Electrolytic Capacitor 8x15mm PANASONIC",
+    "SKU": "A-3945",
+    "ALT": ""
+  },
+  "150UF": {
+    "desc": "105C Radial Electrolytic Capacitor 10x12mm",
+    "SKU": "A-2922",
+    "ALT": ""
+  },
+  "180UF": {
+    "desc": "105C Radial Electrolytic Capacitor 10x12mm",
+    "SKU": "A-2923",
+    "ALT": ""
+  },
+  "220UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 6.3x11mm",
+    "SKU": "A-1159",
+    "ALT": ""
+  },
+  "330UF": {
+    "desc": "105C Radial Electrolytic Capacitor 6x11mm",
+    "SKU": "A-4553",
+    "ALT": ""
+  },
+  "470UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 8x12mm",
+    "SKU": "A-1079",
+    "ALT": ""
+  },
+  "560UF": {
+    "desc": "105C Radial Electrolytic Capacitor 12.5x20mm",
+    "SKU": "A-3943",
+    "ALT": ""
+  },
+  "680UF": {
+    "desc": "105C Radial Electrolytic Capacitor 16x35mm",
+    "SKU": "A-2926",
+    "ALT": ""
+  },
+  "1000UF": {
+    "desc": "105C JRB Radial Electrolytic Capacitor 10x17mm",
+    "SKU": "A-1072",
+    "ALT": ""
+  },
+  "2200UF": {
+    "desc": "105C Radial Electrolytic Capacitor 12x20mm",
+    "SKU": "A-4526",
+    "ALT": ""
+  },
+  "3300UF": {
+    "desc": "105C Radial Electrolytic Capacitor 13x21mm",
+    "SKU": "A-4551",
+    "ALT": ""
+  },
+  "4700UF": {
+    "desc": "85C Radial Electrolytic Capacitor 16x25mm",
+    "SKU": "A-3933",
+    "ALT": ""
+  },
+  "10000UF": {
+    "desc": "105C Radial Electrolytic Capacitor 18x35mm",
+    "SKU": "A-2928",
+    "ALT": ""
+  },
+  "1000PF": {
+    "desc": "0.001UF 100V JB",
+    "SKU": "A-1089",
+    "ALT": ""
+  },
+  "1NF": {
+    "desc": "0.001UF 100V",
+    "SKU": "A-4111",
+    "ALT": ""
+  },
+  "1.2NF": {
+    "desc": "0.0012UF 100V",
+    "SKU": "A-4112",
+    "ALT": ""
+  },
+  "1.5NF": {
+    "desc": "0.0015UF 100V",
+    "SKU": "A-4100",
+    "ALT": "A-4850"
+  },
+  "1.8NF": {
+    "desc": "0.0018UF 100V",
+    "SKU": "A-4101",
+    "ALT": ""
+  },
+  "2.2NF": {
+    "desc": "2200PF 100V JB",
+    "SKU": "A-1084",
+    "ALT": ""
+  },
+  "2.7NF": {
+    "desc": "0.0027UF 100V",
+    "SKU": "A-4133",
+    "ALT": ""
+  },
+  "3.3NF": {
+    "desc": "0.0033UF 100V",
+    "SKU": "A-4103",
+    "ALT": ""
+  },
+  "3300PF": {
+    "desc": "0.0033UF 100V JB",
+    "SKU": "A-980",
+    "ALT": ""
+  },
+  "3.9NF": {
+    "desc": "0.0039UF 100V",
+    "SKU": "A-4120",
+    "ALT": ""
+  },
+  "4700PF": {
+    "desc": "0.0047UF 100V JB",
+    "SKU": "A-1085",
+    "ALT": ""
+  },
+  "4.7NF": {
+    "desc": "0.0047UF 100V",
+    "SKU": "A-4104",
+    "ALT": ""
+  },
+  "5.6NF": {
+    "desc": "0.0056UF 100V",
+    "SKU": "A-4121",
+    "ALT": ""
+  },
+  "6.8NF": {
+    "desc": "0.0068UF 100V",
+    "SKU": "A-4105",
+    "ALT": ""
+  },
+  "8.2NF": {
+    "desc": "0.0082UF 100V JB",
+    "SKU": "A-978",
+    "ALT": ""
+  },
+  "10NF": {
+    "desc": "0.01UF 100V JB",
+    "SKU": "A-1078",
+    "ALT": "A-4106"
+  },
+  "12NF": {
+    "desc": "0.012UF 100V",
+    "SKU": "A-4126",
+    "ALT": ""
+  },
+  "15NF": {
+    "desc": "0.015UF 100V JB",
+    "SKU": "A-985",
+    "ALT": "A-4128"
+  },
+  "18NF": {
+    "desc": "0.018UF 100V",
+    "SKU": "A-4113",
+    "ALT": ""
+  },
+  "22NF": {
+    "desc": "0.022UF 100V JB",
+    "SKU": "A-981",
+    "ALT": "A-4107"
+  },
+  "27NF": {
+    "desc": "0.027UF 100V JB",
+    "SKU": "A-982",
+    "ALT": "A-4108"
+  },
+  "33NF": {
+    "desc": "0.033UF 100V JB",
+    "SKU": "A-1086",
+    "ALT": "A-4109"
+  },
+  "39NF": {
+    "desc": "0.039UF 100V",
+    "SKU": "A-4129",
+    "ALT": ""
+  },
+  "47NF": {
+    "desc": "0.047UF 100V JB",
+    "SKU": "A-1172",
+    "ALT": "A-4130"
+  },
+  "56NF": {
+    "desc": "0.056UF 100V",
+    "SKU": "A-4131",
+    "ALT": ""
+  },
+  "68NF": {
+    "desc": "0.068UF 100V JB",
+    "SKU": "A-1175",
+    "ALT": "A-4123"
+  },
+  "82NF": {
+    "desc": "0.082UF 100V",
+    "SKU": "A-4132",
+    "ALT": ""
+  },
+  "100NF": {
+    "desc": "0.1UF 100V",
+    "SKU": "A-1087",
+    "ALT":  "A-4110"
+  },
+  "120NF": {
+    "desc": "0.12UF 100V JB",
+    "SKU": "A-979",
+    "ALT": "A-4114"
+  },
+  "150NF": {
+    "desc": "0.15UF 100V",
+    "SKU": "A-4134",
+    "ALT": ""
+  },
+  "180NF": {
+    "desc": "0.18UF 100V",
+    "SKU": "A-4135",
+    "ALT": ""
+  },
+  "220NF": {
+    "desc": "0.22UF 100V JB",
+    "SKU": "A-1174",
+    "ALT": "A-4124"
+  },
+  "270NF": {
+    "desc": "0.27UF 100V",
+    "SKU": "A-4125",
+    "ALT": ""
+  },
+  "330NF": {
+    "desc": "0.33UF 100V JB",
+    "SKU": "A-1156",
+    "ALT": "A-4115"
+  },
+  "390NF": {
+    "desc": "0.39UF 100V",
+    "SKU": "A-4136",
+    "ALT": ""
+  },
+  "470NF": {
+    "desc": "0.47UF 100V JB",
+    "SKU": "A-1173",
+    "ALT": "A-4127"
+  },
+  "560NF": {
+    "desc": "0.56UF 100V",
+    "SKU": "A-4137",
+    "ALT": ""
+  },
+  "680NF": {
+    "desc": "0.68UF 100V JB",
+    "SKU": "A-4138",
+    "ALT": "A-2561"
+  },
+  "820NF": {
+    "desc": "0.82UF 100V",
+    "SKU": "A-4139",
+    "ALT": ""
+  }
+}

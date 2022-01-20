@@ -20,4 +20,4 @@ do
 
 done
 
-python3 box.py "output/total.txt" output/*.png
+python3 box.py "output/partlist" output/*.png

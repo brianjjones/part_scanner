@@ -1,0 +1,2457 @@
+[
+    {
+      "name": "LM224 LM224DR2G Single Supply Quad Operational Amplifiers IC SOIC-14",
+      "SKU": "A-4631",
+      "ALT": ""
+    },
+    {
+      "name": "MCP6001 MCP6001T-I/OT LOW POWER OPERATIONAL AMPLIFIERS IC",
+      "SKU": "A-4646",
+      "ALT": ""
+    },
+    {
+      "name": "LM2904DT LOW POWER DUAL OPERATIONAL AMPLIFIERS IC",
+      "SKU": "A-4647",
+      "ALT": ""
+    },
+    {
+      "name": "MCP6541 MCP6541T-E/OT Analog Comparators Single IC",
+      "SKU": "A-4648",
+      "ALT": ""
+    },
+    {
+      "name": "LM258 LM258DR2G Dual Operational Amplifier General Purpose SOIC-8",
+      "SKU": "A-4851",
+      "ALT": ""
+    },
+    {
+      "name": "ULN2803ADWR ULN2803 2803 TRANSISTOR ARRAY-8 NPN IC SOIC-18",
+      "SKU": "A-5343",
+      "ALT": ""
+    },
+    {
+      "name": "KID65503F BIPOLAR LINEAR TRANSISTOR ARRAY-7 NPN IC SOIC-16",
+      "SKU": "A-5344",
+      "ALT": ""
+    },
+    {
+      "name": "BA12003B TRANSISTOR ARRAY-7 NPN IC SOIC-16",
+      "SKU": "A-5345",
+      "ALT": ""
+    },
+    {
+      "name": "TJ7660N TJ7660 CMOS Voltage Converter IC",
+      "SKU": "A-5439",
+      "ALT": "A-1385"
+    },
+    {
+      "name": "BD9328EFJ Step-down Switching Regulator IC HTSOP-J8",
+      "SKU": "A-5441",
+      "ALT": ""
+    },
+    {
+      "name": "BD9673AEFJ Step-down Switching Regulator IC HTSOP-J8",
+      "SKU": "A-5442",
+      "ALT": ""
+    },
+    {
+      "name": "BD9876AEFJ Step-down Switching Regulator IC HTSOP-J8",
+      "SKU": "A-5443",
+      "ALT": ""
+    },
+    {
+      "name": "BA4560F Low noise Operational Amplifier SOP-8",
+      "SKU": "A-5491",
+      "ALT": ""
+    },
+    {
+      "name": "BA10358F Ground Sense Dual Operational Amplifier SOP-8",
+      "SKU": "A-5492",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY24-20SSU Microcontroller 8Bit IC SOIC-14",
+      "SKU": "A-5495",
+      "ALT": ""
+    },
+    {
+      "name": "CD4011 CD4011BM96 4011 QUAD 2-INPUT NAND GATE SOIC-14",
+      "SKU": "A-5504",
+      "ALT": ""
+    },
+    {
+      "name": "CD2399 2399 Echo Audio Processor Guitar IC SMD",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "SMD Version",
+      "SKU": "A-5781",
+      "ALT": ""
+    },
+    {
+      "name": "Collector current(Ic): 6.5 to 13mA",
+      "SKU": "A-5799",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2003 TDA2003L 10W Car Radio Audio Amplifier IC",
+      "SKU": "A-4256",
+      "ALT": ""
+    },
+    {
+      "name": "TDA7388 4 x 26W QUAD BRIDGE CAR RADIO AMPLIFIER IC",
+      "SKU": "A-4271",
+      "ALT": ""
+    },
+    {
+      "name": "MCP602 MCP602-I/P Single Supply CMOS 2.7V to 5.5V IC",
+      "SKU": "A-4603",
+      "ALT": ""
+    },
+    {
+      "name": "Plastic Oxblood knob 15X13mm Shaft Hole 6.4mm",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Shaft Diameter: 6.4mm",
+      "SKU": "A-6082",
+      "ALT": ""
+    },
+    {
+      "name": "KA7818TU KA7818 Voltage Regulator IC +18V 1A",
+      "SKU": "A-6083",
+      "ALT": ""
+    },
+    {
+      "name": "AP1084D33G AP1084 LDO Voltage Regulator IC 3.3V 5A",
+      "SKU": "A-6084",
+      "ALT": ""
+    },
+    {
+      "name": "BA78M12FP BA78M12 Linear Voltage Regulator IC 12V 500mA",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Applications: Fixed voltage power supply for TV",
+      "SKU": "Audio components",
+      "ALT": "etc"
+    },
+    {
+      "name": "BA10393F-E2 ROHM SOP-8",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "BA10393 BA10393F IC Ground Sense Comparator 2-Channel",
+      "SKU": "A-6101",
+      "ALT": ""
+    },
+    {
+      "name": "BU9873 BU9873FJ-GTE2 I2C Bus Serial Interface RTC IC",
+      "SKU": "A-4614",
+      "ALT": ""
+    },
+    {
+      "name": "LM339 LM339DT LOW POWER QUAD VOLTAGE COMPARATORS IC SOIC-14",
+      "SKU": "A-4615",
+      "ALT": ""
+    },
+    {
+      "name": "IRS2092 IRS2092STRPBF PROTECTED DIGITAL AUDIO AMPLIFIER SOIC-16",
+      "SKU": "A-4632",
+      "ALT": ""
+    },
+    {
+      "name": "LM393 LM393DT IC LOW POWER DUAL VOLTAGE COMPARATORS SOIC-8",
+      "SKU": "A-4638",
+      "ALT": ""
+    },
+    {
+      "name": "TS391 TS391SN2T1G IC LOW POWER SINGLE VOLTAGE COMPARATORS TSOP-5",
+      "SKU": "A-4639",
+      "ALT": ""
+    },
+    {
+      "name": "W25Q128JVSIQ W25Q128JV 128Mbit Serial Flash Memory IC",
+      "SKU": "A-4643",
+      "ALT": ""
+    },
+    {
+      "name": "W25Q16JVSSIQ W25Q16JV 16Mbit Serial Flash Memory IC",
+      "SKU": "A-4644",
+      "ALT": ""
+    },
+    {
+      "name": "TMP36GT9Z Low Voltage Temperature Sensor -40C TO 125C IC",
+      "SKU": "A-4645",
+      "ALT": ""
+    },
+    {
+      "name": "BD61243FV Multifunction Single-phase Full wave Fan motor Driver IC",
+      "SKU": "A-4652",
+      "ALT": ""
+    },
+    {
+      "name": "LM79L05 3-Terminal Negative Voltage Regulator IC -5V 0.1A TO-92",
+      "SKU": "A-4676",
+      "ALT": ""
+    },
+    {
+      "name": "PIC12F629-I/P PIC12F629 12F629 Microcontroller IC",
+      "SKU": "A-4752",
+      "ALT": ""
+    },
+    {
+      "name": "PIC12F675-I/P PIC12F675 12F675 Microcontroller IC",
+      "SKU": "A-4753",
+      "ALT": ""
+    },
+    {
+      "name": "PIC16F685-I/P PIC16F685 16F685 Microcontroller IC",
+      "SKU": "A-4754",
+      "ALT": ""
+    },
+    {
+      "name": "CD4022 CD4022BE 4022 Octal COUNTER/DIVIDER IC",
+      "SKU": "A-4758",
+      "ALT": ""
+    },
+    {
+      "name": "MAX3088CPA+ MAX3088 MAXIM RS-485/RS-422 Transceivers IC",
+      "SKU": "A-4781",
+      "ALT": ""
+    },
+    {
+      "name": "BH7824FVM Monaural Speaker Amplfier ICs MSOP-8",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Applications: Mobile telephones",
+      "SKU": "PDAs",
+      "ALT": "notebook computers"
+    },
+    {
+      "name": "74HC164D 8-Bit Serial Shift Register IC",
+      "SKU": "A-4796",
+      "ALT": ""
+    },
+    {
+      "name": "CD4052BM96 4052 CMOS MULTIPLEX/DEMULTIPLEXER IC SOIC-16",
+      "SKU": "A-4797",
+      "ALT": "A-1150"
+    },
+    {
+      "name": "SN74HC595N 74HC595 74595 8 bit Shift Register IC",
+      "SKU": "A-024",
+      "ALT": "A-251"
+    },
+    {
+      "name": "CD74HCT86 74HCT86 7486 QUAD 2-INPUT EXCLUSIVE OR GATE IC",
+      "SKU": "A-025",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0808CCN 8-Bit CPU-Compatible A/D Converter IC",
+      "SKU": "DEL-A-052",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HC4051 74HC4051 744051 IC 8-CHANNEL ANALOG MULTIPLEXER",
+      "SKU": "A-026",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HC4052 74HC4052 744052 IC 4-CHANNEL MULTIPLEXER",
+      "SKU": "A-027",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HC4053 74HC4053 744053 IC TRIPLE 2-CHANNEL MULTIPLEXER",
+      "SKU": "A-028",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HCT393 74HCT393 74393 IC DUAL 4-BIT BINARY COUNTER",
+      "SKU": "A-029",
+      "ALT": ""
+    },
+    {
+      "name": "74HC14 7414 IC HEX SCHMITT INVERTER High Speed CMOS TTL",
+      "SKU": "A-030",
+      "ALT": "A-248"
+    },
+    {
+      "name": "74LS47 7447 IC BCD to Seven-Segment Decoder/Driver",
+      "SKU": "A-066",
+      "ALT": ""
+    },
+    {
+      "name": "74LS04 Hex Inverter IC",
+      "SKU": "A-071",
+      "ALT": ""
+    },
+    {
+      "name": "74LS00 7400 Quad 2-Input NAND Gate IC",
+      "SKU": "A-077",
+      "ALT": "A-1147"
+    },
+    {
+      "name": "74HC374 74374 Octal D-Type Flip-Flop IC",
+      "SKU": "A-1148",
+      "ALT": ""
+    },
+    {
+      "name": "74LS74 7474 Dual D Edge Triggered Flip Flop IC",
+      "SKU": "A-201",
+      "ALT": ""
+    },
+    {
+      "name": "74HC244 74244 OCTAL BUFFERS & LINE DRIVER IC",
+      "SKU": "A-208",
+      "ALT": ""
+    },
+    {
+      "name": "74LS90 7490 Logic IC DECADE COUNTERS",
+      "SKU": "A-227",
+      "ALT": ""
+    },
+    {
+      "name": "74LS74 7474 Dual D Edge Triggered Flip Flop IC",
+      "SKU": "A-229",
+      "ALT": ""
+    },
+    {
+      "name": "74HC14 7414 HEX SCHMITT INVERTER CMOS TTL IC",
+      "SKU": "A-030",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HC595N 74HC595 74595 8 bit Shift Register IC",
+      "SKU": "A-251",
+      "ALT": "A-024"
+    },
+    {
+      "name": "74HCT08 7408 IC Quad 2 Input Positive AND Gate",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HCT08N",
+      "SKU": "A-290",
+      "ALT": ""
+    },
+    {
+      "name": "74HC374 74374 Octal D-Type Flip-Flop IC",
+      "SKU": "A-294",
+      "ALT": ""
+    },
+    {
+      "name": "MC74HC595ADR2G 74HC595 74595 IC 8 bit Shift Register SMD",
+      "SKU": "A-503",
+      "ALT": ""
+    },
+    {
+      "name": "74HC165 74165 IC 8 BIT SHIFT REGISTER",
+      "SKU": "A-639",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT30 7430 8-INPUT NAND GATE IC",
+      "SKU": "A-640",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT27 7427 TRIPLE 3 INPUT NOR GATE IC",
+      "SKU": "A-641",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT163 74163 4-BIT BINARY COUNTER IC",
+      "SKU": "A-642",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0804LCN 8-Bit CPU-Compatible A/D Converter IC",
+      "SKU": "A-051",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0809CCN 8-Bit uP Compatible A/D Converter IC",
+      "SKU": "A-053",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0838CCN ADC0838 8-bit A/D Converter with MUX (8ch) IC",
+      "SKU": "A-055",
+      "ALT": ""
+    },
+    {
+      "name": "AK5394AVSP-E2 AK5394 A/D Converter IC 24-bits",
+      "SKU": "DEL-A-056",
+      "ALT": ""
+    },
+    {
+      "name": "MCP3201 MCP3201-CI/P 12-bit A/D Converter IC",
+      "SKU": "A-058",
+      "ALT": ""
+    },
+    {
+      "name": "MCP3202 MCP3202-CI/P 12-bit A/D Converter IC",
+      "SKU": "A-059",
+      "ALT": ""
+    },
+    {
+      "name": "MCP3208 MCP3208-CI/P 12-bit A/D Converter IC",
+      "SKU": "A-060",
+      "ALT": ""
+    },
+    {
+      "name": "TLC542 A/D converter 8 bit 12 ch. Serial PDIP-20",
+      "SKU": "A-1107",
+      "ALT": ""
+    },
+    {
+      "name": "PCF8591P PCF8591 IC 8-BIT AD AND DA CONVERTER",
+      "SKU": "DEL-A-270",
+      "ALT": ""
+    },
+    {
+      "name": "LNK302GN LNK302 IC SWITCH OFF-LINE MDCM/CCM",
+      "SKU": "A-271",
+      "ALT": ""
+    },
+    {
+      "name": "LNK306GN LNK306 IC 225mA OFF-LINE SWITCHER IC",
+      "SKU": "A-272",
+      "ALT": ""
+    },
+    {
+      "name": "LNK306PN LNK306 IC 225mA OFF-LINE SWITCHER IC",
+      "SKU": "A-273",
+      "ALT": ""
+    },
+    {
+      "name": "LNK354GN LNK354 IC LINK SWITCH - HF",
+      "SKU": "A-274",
+      "ALT": ""
+    },
+    {
+      "name": "TNY275PN TNY275 IC OFF-LINE SWITCHER 6W",
+      "SKU": "A-276",
+      "ALT": ""
+    },
+    {
+      "name": "LM324N LM324 324 Low Power Quad Op-Amp IC",
+      "SKU": "A-046",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2009A TDA2009 10 +10W STEREO AMPLIFIER IC",
+      "SKU": "A-047",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2030A TDA2030 18W Hi-Fi Amplifier 35W Driver IC",
+      "SKU": "A-048",
+      "ALT": ""
+    },
+    {
+      "name": "TDA7499 TDA7499L Audio Amplifier IC",
+      "SKU": "A-1005",
+      "ALT": ""
+    },
+    {
+      "name": "TEA2025 TEA2025L Audio Amplifier IC",
+      "SKU": "A-1007",
+      "ALT": ""
+    },
+    {
+      "name": "TPA4861 TPA4861DRG4 Audio Amplifier IC",
+      "SKU": "A-1008",
+      "ALT": ""
+    },
+    {
+      "name": "LM324 Quad Operational Amplifier General Purpose SOIC-14 LM324DR2G",
+      "SKU": "A-1114",
+      "ALT": ""
+    },
+    {
+      "name": "LM324 Quad Operational Amplifier General Purpose SOIC-14 LM324DT",
+      "SKU": "A-1115",
+      "ALT": ""
+    },
+    {
+      "name": "LM348 Quad Operational Amplifier General Purpose PDIP-14 LM348N",
+      "SKU": "A-1116",
+      "ALT": ""
+    },
+    {
+      "name": "TL064 Quad Operational Amplifier J-FET PDIP-14 TL064CN",
+      "SKU": "A-1134",
+      "ALT": ""
+    },
+    {
+      "name": "TL074 Quad Operational Amplifier J-FET SOIC-14 TL074CDT",
+      "SKU": "A-1137",
+      "ALT": ""
+    },
+    {
+      "name": "TL074 Quad Operational Amplifier J-FET PDIP-14 TL074CN",
+      "SKU": "A-1138",
+      "ALT": ""
+    },
+    {
+      "name": "TL084 Quad Operational Amplifier J-FET SOIC-14 TL084CDT",
+      "SKU": "A-1140",
+      "ALT": ""
+    },
+    {
+      "name": "TL084 Quad Operational Amplifier J-FET PDIP-14 TL084CN",
+      "SKU": "A-1141",
+      "ALT": ""
+    },
+    {
+      "name": "TLC274 Quad Operational Amplifier Precision IC PDIP-14 TLC274CN",
+      "SKU": "A-1144",
+      "ALT": ""
+    },
+    {
+      "name": "LM3886TF LM3886 HIGH-PERFORMANCE 68W AUDIO POWER AMPLIFIER IC",
+      "SKU": "A-225",
+      "ALT": ""
+    },
+    {
+      "name": "TDA7294 DMOS AUDIO AMPLIFIER IC WITH MUTE",
+      "SKU": "A-226",
+      "ALT": ""
+    },
+    {
+      "name": "HA17324A HA17324 17324 IC LOW POWER QUAD OP-AMP",
+      "SKU": "A-278",
+      "ALT": ""
+    },
+    {
+      "name": "LM324DT LM324 324 IC QUAD OP-AMP",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Low Power Quad Op-Amp",
+      "SKU": "A-281",
+      "ALT": ""
+    },
+    {
+      "name": "LF347N LF347 347 IC Quad JFET Input Op Amp Wide band",
+      "SKU": "A-283",
+      "ALT": ""
+    },
+    {
+      "name": "LM2902N LM2902 2902 IC LOW POWER QUAD OP-AMP",
+      "SKU": "A-287",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2040 Audio Amplifier IC",
+      "SKU": "A-491",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2005 TDA2005R 20W Car Radio Bridge Amplifier IC",
+      "SKU": "A-617",
+      "ALT": ""
+    },
+    {
+      "name": "BA5406 Audio Amplifier IC",
+      "SKU": "A-990",
+      "ALT": ""
+    },
+    {
+      "name": "LM1875 LM1875T Audio Amplifier IC",
+      "SKU": "A-992",
+      "ALT": ""
+    },
+    {
+      "name": "MC34119 MC34119L Audio Amplifier IC",
+      "SKU": "DEL-A-995",
+      "ALT": ""
+    },
+    {
+      "name": "CD4030BE CD4030 4030 IC Quad Exclusive OR Gate",
+      "SKU": "A-005",
+      "ALT": ""
+    },
+    {
+      "name": "CD4046BE CD4046 4046 IC Phase Locked Loop",
+      "SKU": "A-006",
+      "ALT": ""
+    },
+    {
+      "name": "CD4049UBE CD4049 4049 IC Hex Buffer/Converters",
+      "SKU": "A-007",
+      "ALT": ""
+    },
+    {
+      "name": "CD4020BE CD4020 4020 IC Ripple-Carry Binary Counter/Divider",
+      "SKU": "A-008",
+      "ALT": ""
+    },
+    {
+      "name": "CD4012BE CD4012 4012 DUAL 4-Input NAND GATE IC",
+      "SKU": "A-009",
+      "ALT": ""
+    },
+    {
+      "name": "CD4001BE CD4001 4001 NOR Gates IC",
+      "SKU": "A-010",
+      "ALT": ""
+    },
+    {
+      "name": "CD4040BE CD4040 4040 Ripple-Carry Binary Counter/Divider IC",
+      "SKU": "A-011",
+      "ALT": ""
+    },
+    {
+      "name": "CD4027BE CD4027 4027 Dual Edge Triggered J-K Master-Slave IC",
+      "SKU": "A-012",
+      "ALT": ""
+    },
+    {
+      "name": "CD4021 CD4021BE 4021 CMOS STATIC SHIFT REG IC",
+      "SKU": "A-013",
+      "ALT": ""
+    },
+    {
+      "name": "CD4014 CD4014BE 4014 8-BIT STATIC SHIFT REGISTER IC",
+      "SKU": "A-014",
+      "ALT": ""
+    },
+    {
+      "name": "CD40106 CD40106BE 40106 HEX SCHMITT TRIGGER IC",
+      "SKU": "A-015",
+      "ALT": ""
+    },
+    {
+      "name": "CD40192 CD40192BE 40192 Presettable Up/Down Counter IC",
+      "SKU": "A-016",
+      "ALT": ""
+    },
+    {
+      "name": "CD4011 CD4011BE 4011 QUAD 2-INPUT NAND GATE IC",
+      "SKU": "A-017",
+      "ALT": "A-5504"
+    },
+    {
+      "name": "CD4028 CD4028BE 4028 BCD to Decimal Decoder IC",
+      "SKU": "A-018",
+      "ALT": ""
+    },
+    {
+      "name": "CD4024 CD4024BE 4024 7-Stage Ripple-Carry Counter/Divider IC",
+      "SKU": "A-019",
+      "ALT": ""
+    },
+    {
+      "name": "CD4017 CD4017BE 4017 DECADE COUNTER/DIVIDER IC",
+      "SKU": "A-020",
+      "ALT": "A-003"
+    },
+    {
+      "name": "Can be used with: A-003",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "CD4060BE CD4060 4060 RIPPLE CARRY BINARY COUNTER IC",
+      "SKU": "A-021",
+      "ALT": ""
+    },
+    {
+      "name": "CD4007 4007 DUAL COMPLEMENTARY INVERTER IC CMOS",
+      "SKU": "A-1149",
+      "ALT": ""
+    },
+    {
+      "name": "CD4052 4052 CMOS MULTIPLEX/DEMULTIPLEXER IC",
+      "SKU": "A-1150",
+      "ALT": "A-4797"
+    },
+    {
+      "name": "CD4053 4053 CMOS MULTIPLEX/DEMULTIPLEXER IC",
+      "SKU": "A-1151",
+      "ALT": ""
+    },
+    {
+      "name": "CD4077 4077 CD4077BE CMOS EXCLUSIVE-NOR GATE IC",
+      "SKU": "A-1152",
+      "ALT": ""
+    },
+    {
+      "name": "CD4081 4081 CMOS AND GATE Quad 2 Input IC",
+      "SKU": "A-1153",
+      "ALT": ""
+    },
+    {
+      "name": "CD4094 4094 CMOS BUS REGISTER IC",
+      "SKU": "A-1154",
+      "ALT": ""
+    },
+    {
+      "name": "CD4047 4047 IC CMOS Monostable Multivibrators",
+      "SKU": "A-296",
+      "ALT": "A-489"
+    },
+    {
+      "name": "CD4043BE CD4043 4043 IC CMOS QUAD 3-STATE LATCHES",
+      "SKU": "A-297",
+      "ALT": ""
+    },
+    {
+      "name": "CD4543BE CD4543 4543 IC CMOS BCD to 7-Segment Latches",
+      "SKU": "A-303",
+      "ALT": ""
+    },
+    {
+      "name": "CD4047 4047 IC CMOS Monostable Multivibrators",
+      "SKU": "A-489",
+      "ALT": "A-296"
+    },
+    {
+      "name": "CD4026 4026 IC CMOS Counters Decade/Divider",
+      "SKU": "A-493",
+      "ALT": ""
+    },
+    {
+      "name": "CD4029 4029 IC CMOS PRESETTABLE COUNTER",
+      "SKU": "A-494",
+      "ALT": ""
+    },
+    {
+      "name": "CD4051 4051 IC CMOS MULTIPLEX/DEMULTIPLEXER",
+      "SKU": "A-495",
+      "ALT": ""
+    },
+    {
+      "name": "CD4093BM96 CD4093 4093 IC CMOS NAND SCHMITT TRIGGER",
+      "SKU": "A-496",
+      "ALT": ""
+    },
+    {
+      "name": "CD4013BM96 CD4013 4013 IC CMOS DUAL D FLIP FLOP",
+      "SKU": "A-497",
+      "ALT": ""
+    },
+    {
+      "name": "CD40175BE CD40175 40175 QUAD D-TYPE FLIP FLOP IC",
+      "SKU": "A-506",
+      "ALT": ""
+    },
+    {
+      "name": "CD4093 4093 IC CMOS NAND SCHMITT TRIGGER",
+      "SKU": "A-554",
+      "ALT": ""
+    },
+    {
+      "name": "CD4066 4066 IC CMOS QUAD BILATERAL SWITCH",
+      "SKU": "A-555",
+      "ALT": ""
+    },
+    {
+      "name": "CD4013 4013 IC CMOS DUAL D FLIP FLOP",
+      "SKU": "A-556",
+      "ALT": ""
+    },
+    {
+      "name": "LM339N LM339 LOW POWER QUAD VOLTAGE COMPARATORS IC",
+      "SKU": "A-022",
+      "ALT": ""
+    },
+    {
+      "name": "LM311 LM311P IC Voltage Comparators",
+      "SKU": "A-204",
+      "ALT": ""
+    },
+    {
+      "name": "LM3914N LM3914 3914 LED Bar Dot Display Driver IC",
+      "SKU": "A-049",
+      "ALT": ""
+    },
+    {
+      "name": "AS1108 AS1108PL 7 Segment 4 Digit LED Display Driver IC",
+      "SKU": "A-1011",
+      "ALT": ""
+    },
+    {
+      "name": "ICL7106 ICL7106CPLZ 7 Segment A/D Converter 3.5 Digit Display Driver IC",
+      "SKU": "A-1014",
+      "ALT": ""
+    },
+    {
+      "name": "ICL7107 ICL7107CPLZ 7 Segment 3.5 Digit A /D Converter Display Driver IC",
+      "SKU": "A-1015",
+      "ALT": ""
+    },
+    {
+      "name": "MAX7219 7 Segment + Dot Point",
+      "SKU": "Common Cathode serially interfaced display driver PDIP-24",
+      "ALT": "A-1018"
+    },
+    {
+      "name": "TLC7135 28 Segment 4.5 digit A /D converter display driver PDIP-28",
+      "SKU": "A-1019",
+      "ALT": ""
+    },
+    {
+      "name": "LM3915N LM3915 LED Bar Dot Display Driver IC",
+      "SKU": "A-502",
+      "ALT": ""
+    },
+    {
+      "name": "ENC28J60 STAND-ALONE ETHERNET CONTROLLER WITH SPI INTERFACE SOIC-28",
+      "SKU": "A-1020",
+      "ALT": ""
+    },
+    {
+      "name": "IR2110 High And Low Side FET DRIVER IC",
+      "SKU": "A-1025",
+      "ALT": ""
+    },
+    {
+      "name": "TC4427 FET Driver 30nS On/30nS Off 2 outputs 1.5A Non-Inverting PDIP-8",
+      "SKU": "A-1031",
+      "ALT": ""
+    },
+    {
+      "name": "TC4429 FET Driver 55nS On/55nS Off 1 outputs 6A Inverting TO-220-5",
+      "SKU": "A-1033",
+      "ALT": ""
+    },
+    {
+      "name": "A1302 Continuous-Time Ratiometric Linear Hall Effect Sensor IC",
+      "SKU": "A-291",
+      "ALT": ""
+    },
+    {
+      "name": "AN6884 5 dot LED driver IC",
+      "SKU": "A-643",
+      "ALT": ""
+    },
+    {
+      "name": "ISL97632IRT26Z-T ISL97632 30mA white LED driver IC",
+      "SKU": "A-644",
+      "ALT": ""
+    },
+    {
+      "name": "TLC5921DAPR TLC5921 16 port 80mA LED driver IC",
+      "SKU": "A-646",
+      "ALT": ""
+    },
+    {
+      "name": "AS1109T AS1109 8 port 100mA LED driver IC",
+      "SKU": "A-653",
+      "ALT": ""
+    },
+    {
+      "name": "ATMEL ATMEGA8-16AU TQFP-32 AVR 8 bit Microcontroller IC",
+      "SKU": "A-073",
+      "ALT": ""
+    },
+    {
+      "name": "AT89C51-24PI 89C51 MICROCONTROLLER IC",
+      "SKU": "A-211",
+      "ALT": ""
+    },
+    {
+      "name": "AT89C51RC-24PU 89C51 MICROCONTROLLER IC",
+      "SKU": "A-216",
+      "ALT": ""
+    },
+    {
+      "name": "AT89C2051-24PU 89C2051 MICROCONTROLLER IC",
+      "SKU": "A-217",
+      "ALT": ""
+    },
+    {
+      "name": "AT89C2051-24SU 89C2051 MICROCONTROLLER IC SMD",
+      "SKU": "A-218",
+      "ALT": ""
+    },
+    {
+      "name": "PIC16F688 8 bit Microcontroller IC",
+      "SKU": "A-289",
+      "ALT": ""
+    },
+    {
+      "name": "PIC16F877A-I/P 8 bit Microcontroller",
+      "SKU": "A-293",
+      "ALT": ""
+    },
+    {
+      "name": "ATMEL Atmega168-20PU AVR 8 bit Microcontroller",
+      "SKU": "A-499",
+      "ALT": ""
+    },
+    {
+      "name": "PIC16F628A 8 bit Microcontroller",
+      "SKU": "A-601",
+      "ALT": ""
+    },
+    {
+      "name": "L298N L298 DUAL FULL BRIDGE DRIVER IC",
+      "SKU": "A-202",
+      "ALT": ""
+    },
+    {
+      "name": "L297 L297/1 Stepper Motor Controller Driver IC",
+      "SKU": "A-567",
+      "ALT": ""
+    },
+    {
+      "name": "TL494CN TL494 PWM Power Supply Controllers IC",
+      "SKU": "A-068",
+      "ALT": ""
+    },
+    {
+      "name": "DS1302 DS1302+ 3-Wire Real-Time Clock",
+      "SKU": "A-1603",
+      "ALT": ""
+    },
+    {
+      "name": "MAX232 MAXIM RS232 IC 232 DRIVER RECEIVER TTL Converter",
+      "SKU": "A-034",
+      "ALT": ""
+    },
+    {
+      "name": "XR-2206 XR2206CP XR2206 Monolithic Function Generator IC",
+      "SKU": "A-343",
+      "ALT": ""
+    },
+    {
+      "name": "MT8870 MT8870DE1 CMOS LOW POWER DTMF DECODER RECEIVER",
+      "SKU": "A-041",
+      "ALT": ""
+    },
+    {
+      "name": "HT9032 Calling line identification receiver CALL ID SOIC-8",
+      "SKU": "A-1047",
+      "ALT": ""
+    },
+    {
+      "name": "MC34018 Voice switch speakerphone circuit PDIP-28",
+      "SKU": "A-1056",
+      "ALT": ""
+    },
+    {
+      "name": "MC34118 Voice switch speakerphone circuit PDIP-28",
+      "SKU": "A-1058",
+      "ALT": ""
+    },
+    {
+      "name": "MT8888 transceiver with intel micro interface PDIP-20",
+      "SKU": "A-1068",
+      "ALT": ""
+    },
+    {
+      "name": "XR2211 fsk demodulation /tone decoder PDIP-14",
+      "SKU": "DEL-1089",
+      "ALT": ""
+    },
+    {
+      "name": "MT8880CE MT8880 INTEGRATE DTMF TRANSCEIVER IC",
+      "SKU": "A-616",
+      "ALT": ""
+    },
+    {
+      "name": "DS18S20 DS1820 1 Wire Digital Thermometer IC Dallas",
+      "SKU": "A-050",
+      "ALT": ""
+    },
+    {
+      "name": "DS18B20 1-Wire Digital Temperature Sensor IC Dallas",
+      "SKU": "A-072",
+      "ALT": ""
+    },
+    {
+      "name": "LM335 Precision Temperature Sensor -40C TO 100C IC",
+      "SKU": "A-194",
+      "ALT": ""
+    },
+    {
+      "name": "LM35DZ LM35 CENTIGRADE TEMPERATURE SENSOR IC",
+      "SKU": "A-200",
+      "ALT": ""
+    },
+    {
+      "name": "DS1620 Digital Thermometer and Thermostat",
+      "SKU": "A-268",
+      "ALT": ""
+    },
+    {
+      "name": "NE556N NE556 556 General Purpose Dual Bipolar Timer ic",
+      "SKU": "A-040",
+      "ALT": ""
+    },
+    {
+      "name": "ULN2004AN ULN2004 2004 TRANSISTOR ARRAY-7 NPN IC",
+      "SKU": "A-042",
+      "ALT": ""
+    },
+    {
+      "name": "ULN2803A ULN2803 2803 TRANSISTOR ARRAY-8 NPN IC",
+      "SKU": "A-067",
+      "ALT": ""
+    },
+    {
+      "name": "ULN2003AN ULN2003 ARRAY-7 NPN DARLINGTONS IC",
+      "SKU": "A-070",
+      "ALT": "A-655"
+    },
+    {
+      "name": "ULN2003AD ULN2003 ARRAY-7 NPN DARLINGTONS IC",
+      "SKU": "A-1591",
+      "ALT": ""
+    },
+    {
+      "name": "ULN2804A ULN2804 OCTAL DARLINGTON ARRAYS IC",
+      "SKU": "A-219",
+      "ALT": ""
+    },
+    {
+      "name": "ULN2003APG ULN2003 ARRAY-7 NPN DARLINGTONS IC",
+      "SKU": "A-070",
+      "ALT": ""
+    },
+    {
+      "name": "LM723CN LM723 Adj. Voltage Regulator 2-37V 150mA IC",
+      "SKU": "A-038",
+      "ALT": ""
+    },
+    {
+      "name": "L7806CV L7806 7806 Voltage Regulator IC 6V 1.5A",
+      "SKU": "A-1595",
+      "ALT": ""
+    },
+    {
+      "name": "L7808CV L7808 7808 Voltage Regulator IC 8V 1.5A",
+      "SKU": "A-1596",
+      "ALT": ""
+    },
+    {
+      "name": "L7809CV L7809 7809 Voltage Regulator IC 9V 1.5A",
+      "SKU": "A-1597",
+      "ALT": ""
+    },
+    {
+      "name": "KIA7924 7924 L7924 Voltage Regulator IC - 24V 1.5A",
+      "SKU": "A-1598",
+      "ALT": ""
+    },
+    {
+      "name": "LM1117 LM1117MPX 5.0V 800mA Low-Dropout Linear Voltage Regulator",
+      "SKU": "A-1599",
+      "ALT": ""
+    },
+    {
+      "name": "LM338K LM338 ADJ. VOLTAGE REGULATOR IC 1.2V TO 32V 5A",
+      "SKU": "A-175",
+      "ALT": ""
+    },
+    {
+      "name": "LM317T LM317 Voltage Regulator IC 1.2V to 37V 1.5A",
+      "SKU": "A-177",
+      "ALT": ""
+    },
+    {
+      "name": "L7824CV L7824 7824 Voltage Regulator IC +24 Volts 1 Amp",
+      "SKU": "A-178",
+      "ALT": ""
+    },
+    {
+      "name": "L7805 LM7805 L7805CV datasheet pdf buy information",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "LM7805 L7805 7805 Voltage Regulator IC 5V 1.5A",
+      "SKU": "A-179",
+      "ALT": ""
+    },
+    {
+      "name": "L7915CV L7915 7915 Voltage Regulator IC -15V 1.5A",
+      "SKU": "A-180",
+      "ALT": ""
+    },
+    {
+      "name": "L7815CV L7815 7815 Voltage Regulator IC +15V 1.5A",
+      "SKU": "A-181",
+      "ALT": ""
+    },
+    {
+      "name": "L7812CV LM7812 L7812 7812 Voltage Regulator IC + 12V 1.5A",
+      "SKU": "A-207",
+      "ALT": ""
+    },
+    {
+      "name": "LM337 LM337T ADJ Negative Voltage Regulator IC 1.5A",
+      "SKU": "A-222",
+      "ALT": ""
+    },
+    {
+      "name": "LM2576 LM2576T-5.0 5.0V SWITCHING VOLTAGE REGULATOR IC",
+      "SKU": "A-224",
+      "ALT": ""
+    },
+    {
+      "name": "LM323K LM323 Voltage Regulator IC 5V 3A",
+      "SKU": "A-256",
+      "ALT": ""
+    },
+    {
+      "name": "L7818CV LM7818 L7818 Voltage Regulator IC +18V 1.5A",
+      "SKU": "A-257",
+      "ALT": ""
+    },
+    {
+      "name": "L7905CV LM7905 L7905 Negative Voltage Regulator IC - 5V 1.5A",
+      "SKU": "A-258",
+      "ALT": ""
+    },
+    {
+      "name": "LM350 LM350T Adjustable Voltage Regulator IC 1.2 - 33V 3A",
+      "SKU": "A-260",
+      "ALT": ""
+    },
+    {
+      "name": "L78L33ACZ 78L33 + 3.3V Voltage Regulator IC",
+      "SKU": "A-492",
+      "ALT": ""
+    },
+    {
+      "name": "LM317LZ LM317L LM317 0.1A Voltage Regulator IC",
+      "SKU": "A-500",
+      "ALT": ""
+    },
+    {
+      "name": "L7912CV LM7912 L7912 7912 Voltage Regulator IC -12V 1.5A",
+      "SKU": "A-505",
+      "ALT": ""
+    },
+    {
+      "name": "MAX663 CPA+ 40mA 5V Programmable Voltage Regulator IC",
+      "SKU": "A-627",
+      "ALT": ""
+    },
+    {
+      "name": "LM1117T LM1117 Low Dropout Voltage Regulator IC 3.3V",
+      "SKU": "A-628",
+      "ALT": ""
+    },
+    {
+      "name": "LM78L05 78L05 3 Terminal Voltage Regulator IC SMD",
+      "SKU": "A-629",
+      "ALT": ""
+    },
+    {
+      "name": "KA7918 L7918 LM7918 Voltage Regulator IC -18V 1.5A",
+      "SKU": "A-630",
+      "ALT": ""
+    },
+    {
+      "name": "TL431ACL TL431 PRECISION SHUNT REGULATOR",
+      "SKU": "A-140",
+      "ALT": "A-3238"
+    },
+    {
+      "name": "BT136S-600 BT136S-600",
+      "SKU": "118 Triac 600V 27A",
+      "ALT": "A-3239"
+    },
+    {
+      "name": "BT134-600D BT134-600D",
+      "SKU": "127 Triac 600V 4A",
+      "ALT": "A-3240"
+    },
+    {
+      "name": "MC34063AP1G MC34063A Switching Voltage Regulators 40V 1.5A",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "MC34063AP1G MC34063AP Switching Voltage Regulators 40V 1.5A",
+      "SKU": "A-3246",
+      "ALT": ""
+    },
+    {
+      "name": "MC34063ADR2G MC34063AD Switching Voltage Regulators 40V 1.5A",
+      "SKU": "A-3248",
+      "ALT": ""
+    },
+    {
+      "name": "VIPER22ADIP-E AC to DC Switching Converter PDIP-8",
+      "SKU": "A-3249",
+      "ALT": ""
+    },
+    {
+      "name": "LNK304PN LNK304 OFF-LINE SWITCHER IC 170mA At 230VAC",
+      "SKU": "A-3298",
+      "ALT": ""
+    },
+    {
+      "name": "UC3842BNG UC3842 Current Mode PWM Controllers IC",
+      "SKU": "A-3299",
+      "ALT": ""
+    },
+    {
+      "name": "UC3843BNG UC3843 Current Mode PWM Controllers IC",
+      "SKU": "A-3300",
+      "ALT": ""
+    },
+    {
+      "name": "UC3845BN UC3845 Current Mode PWM Controllers IC",
+      "SKU": "A-3301",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY13A-SU Microcontroller 8Bit IC SOIC-8",
+      "SKU": "A-3302",
+      "ALT": ""
+    },
+    {
+      "name": "STM32F103CBT6 Microcontroller 32Bit IC FQFP-48",
+      "SKU": "A-3303",
+      "ALT": ""
+    },
+    {
+      "name": "STM32F070CBT6 Microcontroller 32Bit IC FQFP-48",
+      "SKU": "A-3304",
+      "ALT": ""
+    },
+    {
+      "name": "LM2576 LM2576HVT-ADJ 1.23V to 52V STEP-DOWN SWITCHING REGULATOR IC",
+      "SKU": "A-3308",
+      "ALT": ""
+    },
+    {
+      "name": "FSDM311A DM311 AC to DC PWM Controllers IC",
+      "SKU": "A-3309",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HC04N 74HC04 7404 CMOS HEX INVERTER IC PDIP-14",
+      "SKU": "A-3289",
+      "ALT": ""
+    },
+    {
+      "name": "CD4510BE CD4510 4510 CMOS Presettable Up/Down Counters IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "CD4510BE CD4510 4510 CMOS Presettable BCD Up/Down Counters IC",
+      "SKU": "A-3288",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HC123E 74HC123 74123 IC CMOS Dual Retriggerable Monostable Multivibrators with Reset",
+      "SKU": "A-3612",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HC138N 74HC138 74138 IC 3-to-8 Line Inverting Decoders/Demultiplexers",
+      "SKU": "A-3613",
+      "ALT": ""
+    },
+    {
+      "name": "MAX3082CPA+ MAX3082 MAXIM RS-485/RS-422 Transceivers IC",
+      "SKU": "A-3651",
+      "ALT": ""
+    },
+    {
+      "name": "NT3H2111W0FT1X NT3H2111 RFID Transponders NTAG IC",
+      "SKU": "A-3652",
+      "ALT": ""
+    },
+    {
+      "name": "HT12E IC 2^12 Series of Encoders",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "HT12E IC 2 12 Series of Encoders",
+      "SKU": "A-3664",
+      "ALT": ""
+    },
+    {
+      "name": "HCPL3120 Gate Drive Optocoupler 1 Channel DIP-8",
+      "SKU": "A-3669",
+      "ALT": ""
+    },
+    {
+      "name": "74VHCV245FT 74VHCV245 CMOS OCTAL BUS TRANSCEIVER IC TSSOP-20B",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "74VHCV245FTBJ 74VHCV245 CMOS OCTAL BUS TRANSCEIVER IC TSSOP-20B",
+      "SKU": "A-3690",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HC245N 74HC245 CMOS OCTAL BUS TRANSCEIVER IC PDIP-20",
+      "SKU": "A-3695",
+      "ALT": "A-3692"
+    },
+    {
+      "name": "SS49E Linear Hall Effect Sensor IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Applications: Industrial",
+      "SKU": "Sensing & Instrumentation",
+      "ALT": "Medical"
+    },
+    {
+      "name": "LM2917 LM2917N-14 Frequency to Voltage Converter IC PDIP-14",
+      "SKU": "A-3906",
+      "ALT": ""
+    },
+    {
+      "name": "MOC3083 MOC3083M 3083 Zero-Cross Triac Driver Optocoupler IC",
+      "SKU": "A-3907",
+      "ALT": ""
+    },
+    {
+      "name": "SN74LVC1G3157 Analog Switch SPDT SOT-23-6",
+      "SKU": "A-3918",
+      "ALT": ""
+    },
+    {
+      "name": "M54123LK Earth Leakage Detector IC 12V SIP-8",
+      "SKU": "A-3929",
+      "ALT": ""
+    },
+    {
+      "name": "74HC125 74HC125D 74125 Quad Bus Buffer Tri-State IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "74HC125 74HC125D",
+      "SKU": "653 74125 Quad Bus Buffer Tri-State IC",
+      "ALT": "A-3947"
+    },
+    {
+      "name": "74HC138 74HC138D",
+      "SKU": "653 74138 3 to 8 Line Decoder/Demultiplexer Inverting",
+      "ALT": "A-3950"
+    },
+    {
+      "name": "STG719STR Analog Switch SPDT SOT-23-6",
+      "SKU": "A-3956",
+      "ALT": ""
+    },
+    {
+      "name": "FSA1156 Analog Switch SPST SOT-23-6",
+      "SKU": "A-3958",
+      "ALT": ""
+    },
+    {
+      "name": "74HC42 74HC42N 7442 BCD to Decimal Decoder IC",
+      "SKU": "A-3972",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HC161E 74HC161 74161 4-BIT BINARY COUNTER IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Asynchronous Reset",
+      "SKU": "A-3973",
+      "ALT": ""
+    },
+    {
+      "name": "TC4S66F Bilateral Switch SPST SOT-23-5",
+      "SKU": "A-4071",
+      "ALT": ""
+    },
+    {
+      "name": "LT1054 LT1054CP Charge Pump Switching Regulator IC",
+      "SKU": "A-4217",
+      "ALT": ""
+    },
+    {
+      "name": "HT12D IC 2^12 Series of Decoders",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "HT12D IC 2 12 Series of Decoders",
+      "SKU": "A-4235",
+      "ALT": ""
+    },
+    {
+      "name": "CNY17G-3 PHOTOTRANSISTOR OPTOCOUPLERS WITH BASE CONNECTION IC",
+      "SKU": "A-4238",
+      "ALT": ""
+    },
+    {
+      "name": "24LC04B/P 24LC04 4Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-4253",
+      "ALT": ""
+    },
+    {
+      "name": "24LC128-I/P 24LC128 128Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-4254",
+      "ALT": ""
+    },
+    {
+      "name": "W25Q32JVSSIQ W25Q32JV 32Mbit Serial Flash Memory IC",
+      "SKU": "A-4255",
+      "ALT": ""
+    },
+    {
+      "name": "TNY275 TNY275PN AC to DC Converter off-Line Switcher IC",
+      "SKU": "A-4273",
+      "ALT": ""
+    },
+    {
+      "name": "TNY280 TNY280PN AC to DC Converter off-Line Switcher IC",
+      "SKU": "A-4274",
+      "ALT": ""
+    },
+    {
+      "name": "TNY287 TNY287PG AC to DC Converter off-Line Switcher IC",
+      "SKU": "A-4275",
+      "ALT": ""
+    },
+    {
+      "name": "LM2907 LM2907N-14 Frequency to Voltage Converter IC PDIP-14",
+      "SKU": "A-4304",
+      "ALT": ""
+    },
+    {
+      "name": "LM78M05 LM78M05RS 78M05 3-Terminal Positive Voltage Regulator IC 5V 0.5A",
+      "SKU": "A-4318",
+      "ALT": ""
+    },
+    {
+      "name": "MAX3232 MAX3232CSE MAXIM 232 True RS-232 Transceiver up to 1Mbps",
+      "SKU": "A-4322",
+      "ALT": ""
+    },
+    {
+      "name": "TL431ASF TL431 PRECISION SHUNT REGULATOR SOT-23",
+      "SKU": "A-4323",
+      "ALT": ""
+    },
+    {
+      "name": "MAX7221 MAX7221CNG 8-Digit LED Display Drivers",
+      "SKU": "A-4388",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT125 SN74HCT125N 74125 Quad Bus Buffer Gates Tri-State IC",
+      "SKU": "A-4592",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT125 SN74HCT125DR 74125 Quad Bus Buffer Gates Tri-State IC SOIC-14",
+      "SKU": "A-4593",
+      "ALT": ""
+    },
+    {
+      "name": "LM13700 LM13700N Operational Amplifier IC",
+      "SKU": "A-900",
+      "ALT": ""
+    },
+    {
+      "name": "74HC125 HD74HC125P 74125 Quad Bus Buffer Tri-State IC",
+      "SKU": "A-888",
+      "ALT": ""
+    },
+    {
+      "name": "74LS181 74181 Arithmetic Logic Unit Function Generator IC",
+      "SKU": "DEL-A-898",
+      "ALT": ""
+    },
+    {
+      "name": "CD4070 CD4070BE 4070 Quad EXCLUSIVE-OR Gate IC",
+      "SKU": "A-892",
+      "ALT": ""
+    },
+    {
+      "name": "CD4071 CD4071BE 4071 Quad 2-input OR Gate IC",
+      "SKU": "A-889",
+      "ALT": ""
+    },
+    {
+      "name": "CD4050 CD4050BE 4050 Buffers & Line Drivers Hex Non-Inverting IC",
+      "SKU": "A-906",
+      "ALT": ""
+    },
+    {
+      "name": "MCP23017 16-Bit I/O Expander with I2C Interface IC",
+      "SKU": "A-897",
+      "ALT": ""
+    },
+    {
+      "name": "PCF8574 I2C I/O Bus Expander IC",
+      "SKU": "A-905",
+      "ALT": ""
+    },
+    {
+      "name": "MAX1771 MAX1771CPA High-Efficieny DC-DC Controller IC",
+      "SKU": "A-915",
+      "ALT": ""
+    },
+    {
+      "name": "74LS32 7432 Quadruple 2 Input Positive OR Gate IC",
+      "SKU": "A-929",
+      "ALT": ""
+    },
+    {
+      "name": "74HC00 7400 Quad 2-input NAND Gate IC",
+      "SKU": "A-920",
+      "ALT": "A-920"
+    },
+    {
+      "name": "74HC02 7402 Quad 2-input NOR Gate IC",
+      "SKU": "A-921",
+      "ALT": ""
+    },
+    {
+      "name": "74HC164 74164 8-bit Serial Shift Register IC",
+      "SKU": "A-922",
+      "ALT": ""
+    },
+    {
+      "name": "74LS48 7448 BCD to 7-segment Decoder Driver IC",
+      "SKU": "A-923",
+      "ALT": ""
+    },
+    {
+      "name": "LM2917 LM2917N-8 Frequency to Voltage Converter IC",
+      "SKU": "A-924",
+      "ALT": ""
+    },
+    {
+      "name": "LM380 LM380N 2-Watt Audio Power Amplifier IC",
+      "SKU": "A-925",
+      "ALT": ""
+    },
+    {
+      "name": "OP275 OP275GPZ Dual JFET Operational Amplifier IC",
+      "SKU": "A-926",
+      "ALT": ""
+    },
+    {
+      "name": "LM3900 LM3900N Quad Operational Amplifier IC",
+      "SKU": "A-927",
+      "ALT": ""
+    },
+    {
+      "name": "74AC04 Hex Inverter IC 74AC04SCX",
+      "SKU": "A-1320",
+      "ALT": ""
+    },
+    {
+      "name": "Can be used with: A-1336",
+      "SKU": "A-003",
+      "ALT": ""
+    },
+    {
+      "name": "VO2223A VO2223 Optocoupler Power Phototriac IC",
+      "SKU": "A-1370",
+      "ALT": "A-003"
+    },
+    {
+      "name": "TC1044SCPA TC1044 Voltage Regulator IC",
+      "SKU": "A-1377",
+      "ALT": "A-003"
+    },
+    {
+      "name": "74LS00 7400 Quad 2-Input NAND Gate IC",
+      "SKU": "A-1491",
+      "ALT": ""
+    },
+    {
+      "name": "UM3561 UM3561A Audio IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "IC for 4 Siren Sound Generator DIY project",
+      "SKU": "A-1376",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY2313A-PU ATTINY2313 MICROCONTROLLER IC",
+      "SKU": "A-1374",
+      "ALT": ""
+    },
+    {
+      "name": "REF2912 1.25V Voltage Reference IC",
+      "SKU": "A-1720",
+      "ALT": ""
+    },
+    {
+      "name": "REF2940 4.096V Voltage Reference IC",
+      "SKU": "A-1762",
+      "ALT": ""
+    },
+    {
+      "name": "PIC16F636-I/P 8-bit Microcontroller IC",
+      "SKU": "A-1495",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY2313V-10PU ATTINY2313 MICROCONTROLLER IC",
+      "SKU": "DEL-A-732",
+      "ALT": ""
+    },
+    {
+      "name": "PIC12F683-I/P PIC12F683 12F683 Microcontroller IC",
+      "SKU": "A-757",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2050V TDA2050 18W Hi-Fi Amplifier 35W Driver IC",
+      "SKU": "A-847",
+      "ALT": ""
+    },
+    {
+      "name": "PIC18F4520-I/P PIC18F4520 18F4520 8 bit Microcontroller IC",
+      "SKU": "A-849",
+      "ALT": ""
+    },
+    {
+      "name": "OPA2134PA OPA2134 2134 Hi-Perf Op-Amp IC",
+      "SKU": "A-856",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY13A-10PU Microcontroller IC",
+      "SKU": "A-855",
+      "ALT": ""
+    },
+    {
+      "name": "ATMEGA328P-PU ATMEGA328 MICROCONTROLLER IC",
+      "SKU": "A-854",
+      "ALT": ""
+    },
+    {
+      "name": "SN75176 SN75176BP 75176 Buffers & Line Drivers IC",
+      "SKU": "A-762",
+      "ALT": ""
+    },
+    {
+      "name": "L293 L293D Push-Pull 4-Channel Driver IC",
+      "SKU": "A-873",
+      "ALT": ""
+    },
+    {
+      "name": "L78L09ACZ L78L09 78L09 +9 VOLTS 100mA Voltage Regulator IC",
+      "SKU": "A-878",
+      "ALT": ""
+    },
+    {
+      "name": "74LS138 HD74LS138P 3 to 8 Decoder/Demultiplexer IC",
+      "SKU": "A-879",
+      "ALT": ""
+    },
+    {
+      "name": "CD4511BE CD4511 4511 BCD to 7 segment Latch Decoder IC",
+      "SKU": "A-886",
+      "ALT": ""
+    },
+    {
+      "name": "CD4069UBE CD4069 4069 Hex Inverter IC",
+      "SKU": "A-882",
+      "ALT": ""
+    },
+    {
+      "name": "CD4514BE CD4514 4 Bit Latch/ 4 to 16 Line decoder",
+      "SKU": "DEL-A-880",
+      "ALT": ""
+    },
+    {
+      "name": "CD4515BE CD4515 4 Bit Latch/ 4 to 16 Line decoder",
+      "SKU": "DEL-A-883",
+      "ALT": ""
+    },
+    {
+      "name": "CD74HC238 74HC238 74238 IC 3 to 8 Line Decoder Demultiplexer",
+      "SKU": "A-1502",
+      "ALT": ""
+    },
+    {
+      "name": "PT2399 2399 Echo Audio Processor Guitar IC SMD",
+      "SKU": "A-1526",
+      "ALT": "A-5781"
+    },
+    {
+      "name": "LM2940 LM2940CT-5.0 LDO Voltage Regulator IC",
+      "SKU": "A-1527",
+      "ALT": ""
+    },
+    {
+      "name": "PIC16F84A-20/P PIC16F84A 8 bit Microcontroller IC",
+      "SKU": "A-912",
+      "ALT": ""
+    },
+    {
+      "name": "74LS08 7408 Quadruple 2 Input Positive AND Gate IC",
+      "SKU": "A-753",
+      "ALT": ""
+    },
+    {
+      "name": "CD4541BE CD4541 4541 CMOS Programmable Timer IC",
+      "SKU": "A-1576",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT4046AN",
+      "SKU": "112 74HC HCT4046 PLLs with VCO IC",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT4046AN",
+      "SKU": "112 74HCT4046 PLLs with VCO IC",
+      "ALT": "A-1574"
+    },
+    {
+      "name": "CD74HCT4020EE4 74HCT4020 744020 IC 14-STAGE RIPPLE CARRY COUNTER/DIVIDER WITH OSC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "74HCT4020 744020 IC 14-STAGE RIPPLE CARRY COUNTER/DIVIDER WITH OSC",
+      "SKU": "A-1499",
+      "ALT": ""
+    },
+    {
+      "name": "BD7411G-TR BD7411G Magnetic Switches Omnipolar Detection Hall Sensor ICs",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "BD7411G-TR BD7411G Magnetic Switches Omnipolar Detection Hall Sensor IC",
+      "SKU": "A-1808",
+      "ALT": "A-1814"
+    },
+    {
+      "name": "TA2003L-D16-T TA2003 AM/FM Radios 750mW Supply Range 1.8V-7V IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "TA2003L TA2003 AM/FM Radios 750mW Supply Range 1.8V-7V IC",
+      "SKU": "A-1795",
+      "ALT": ""
+    },
+    {
+      "name": "U2270B-MFPY U2270B IC READ/WRITE BASE READER RFID 125KHz SOIC-16",
+      "SKU": "A-1796",
+      "ALT": ""
+    },
+    {
+      "name": "ATMEL ATMEGA328P-AU-T TQFP-32 AVR 8 bit Microcontroller IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "ATMEL ATMEGA328P-AU TQFP-32 AVR 8 bit Microcontroller IC",
+      "SKU": "A-2947",
+      "ALT": ""
+    },
+    {
+      "name": "AT89C55WD-24PU 89C55 Microcontroller IC",
+      "SKU": "A-2953",
+      "ALT": ""
+    },
+    {
+      "name": "MCP9700A-E/TO MCP9700 Low Power Linear Active Thermistor -40°C to +125°C IC MICROCHIP TO-92",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Wide Temperature Measurement Range",
+      "SKU": "A-2971",
+      "ALT": ""
+    },
+    {
+      "name": "M581A-L3 M581A Ding-Dong Door Bell Sound IC TO-92",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "M581A Ding-Dong Door Bell Sound IC TO-92",
+      "SKU": "A-2975",
+      "ALT": ""
+    },
+    {
+      "name": "MCP42010 MCP42010-I/P Dual Digital Potentiometer 10K Ohm with SPI Interface IC",
+      "SKU": "A-4152",
+      "ALT": ""
+    },
+    {
+      "name": "79L15L-T92-B 79L 3-Terminal Negative Voltage Regulator IC -15V 0.1A UTC TO-92",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "79L15L 79L15 3-Terminal Negative Voltage Regulator IC -15V 0.1A UTC TO-92",
+      "SKU": "A-4157",
+      "ALT": ""
+    },
+    {
+      "name": "TNY280PN TNY280 IC AC-DC CONVERTER OFF-LINE SWITCHER 36.5W",
+      "SKU": "A-4158",
+      "ALT": ""
+    },
+    {
+      "name": "CD4021 CD4021BPWR 4021 CMOS STATIC SHIFT REG IC TSSOP-16",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "CD4021 CD4021BPWR CMOS STATIC SHIFT REG IC TSSOP-16",
+      "SKU": "A-4159",
+      "ALT": ""
+    },
+    {
+      "name": "CD4040BM96 CD4040 4040 Ripple-Carry Binary Counter/Divider IC SOIC-16",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "CD4040BM96 CD4040 Ripple-Carry Binary Counter/Divider IC SOIC-16",
+      "SKU": "A-4160",
+      "ALT": ""
+    },
+    {
+      "name": "CD4049UBDRG4 CD4049 4049 IC Hex Buffer/Converters SOIC-16",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "CD4049UBDRG4 CD4049 IC Hex Buffer/Converters SOIC-16",
+      "SKU": "A-4161",
+      "ALT": ""
+    },
+    {
+      "name": "MCP4728A0T-E/UN 12-Bit Quad DAC with EEPROM Memory I2C Interface IC",
+      "SKU": "A-1396",
+      "ALT": ""
+    },
+    {
+      "name": "CD4516BE CD4516 4516 CMOS Presettable Up/Down Counters IC",
+      "SKU": "A-1425",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2030AL TDA2030 18W Hi-Fi Amplifier 35W Driver IC",
+      "SKU": "A-765",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HCT273N 74273 OCTAL D-TYPE FLIP-FLOPS IC",
+      "SKU": "A-931",
+      "ALT": ""
+    },
+    {
+      "name": "BA17805FP BA17805 17805 Voltage Regulator IC 5V 1A",
+      "SKU": "A-1180",
+      "ALT": ""
+    },
+    {
+      "name": "LTV847 Optocouplers Phototransistor 35V IC",
+      "SKU": "A-1220",
+      "ALT": ""
+    },
+    {
+      "name": "KIA278R05PI KIA278 278R05 Low Drop Voltage Regulator IC 5V 2A",
+      "SKU": "A-1221",
+      "ALT": ""
+    },
+    {
+      "name": "24LC32A/P 24LC32 32Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-1224",
+      "ALT": ""
+    },
+    {
+      "name": "MC79L12AC MC79L12 3-Terminal Negative Voltage Regulator IC -12V 0.1A TO-92",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "MC79L12AC MC79L12A 3-Terminal Negative Voltage Regulator IC -12V 0.1A TO-92",
+      "SKU": "A-1578",
+      "ALT": ""
+    },
+    {
+      "name": "MC78L15AC MC78L15 3-Terminal Positive Voltage Regulator IC 15V 0.1A TO-92",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "MC78L15A MC78L15 3-Terminal Positive Voltage Regulator IC 15V 0.1A TO-92",
+      "SKU": "A-1581",
+      "ALT": ""
+    },
+    {
+      "name": "L78L12AC L78L12 3-Terminal Positive Voltage Regulator IC 12V 0.1A TO-92",
+      "SKU": "A-1582",
+      "ALT": ""
+    },
+    {
+      "name": "TLP185(GRH-TR",
+      "SKU": "SE(T Optocouplers Phototransistor 80V IC",
+      "ALT": ""
+    },
+    {
+      "name": "TLP185(GRH",
+      "SKU": "SE) Optocouplers Phototransistor 80V IC",
+      "ALT": "A-1998"
+    },
+    {
+      "name": "ATMEL ATMEGA8L-8AU TQFP-32 AVR 8 bit Microcontroller IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "8-Bit AVR MCU 8KBytes ISP Flash",
+      "SKU": "A-1999",
+      "ALT": ""
+    },
+    {
+      "name": "BD8158FVM Boost Converter with Integrated FET IC MSOP-8",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Switching Frequency 600kHz/1.2MHz",
+      "SKU": "A-2414",
+      "ALT": ""
+    },
+    {
+      "name": "TDA7088L TDA7088 FM Radio Mono Receiver Circuit IC SOP-16",
+      "SKU": "A-2415",
+      "ALT": ""
+    },
+    {
+      "name": "SN74HCT244N 74HCT244 74244 OCTAL BUFFERS & LINE DRIVER IC",
+      "SKU": "A-2438",
+      "ALT": ""
+    },
+    {
+      "name": "74HC02PW",
+      "SKU": "118 74HC02 7402 Quad 2-input NOR Gate IC TSSOP-14",
+      "ALT": ""
+    },
+    {
+      "name": "74HC02PW",
+      "SKU": "118 74HC02PW 7402 Quad 2-input NOR Gate IC TSSOP-14",
+      "ALT": "A-2443"
+    },
+    {
+      "name": "CD4066BM96 4066 IC CMOS QUAD BILATERAL SWITCH SOIC-14",
+      "SKU": "A-2446",
+      "ALT": ""
+    },
+    {
+      "name": "NCP2890 NCP2890DMR2G AUDIO POWER AMPLIFIER IC",
+      "SKU": "A-2469",
+      "ALT": ""
+    },
+    {
+      "name": "MCP3008-I/P Analog to Digital Converter 8-Channel 200ksps DIP-16",
+      "SKU": "A-2470",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0834CCN Analog to Digital Converter 8Bit DIP-14",
+      "SKU": "A-2471",
+      "ALT": ""
+    },
+    {
+      "name": "L78L05ACZ L78L05 78L05 +5 VOLTS 100mA Voltage Regulator IC",
+      "SKU": "A-176",
+      "ALT": ""
+    },
+    {
+      "name": "PT2399 2399 Echo Audio Processor Guitar IC",
+      "SKU": "A-043",
+      "ALT": ""
+    },
+    {
+      "name": "Collector current(Ic): 4 to 8mA",
+      "SKU": "A-999",
+      "ALT": "A-5799"
+    },
+    {
+      "name": "4N33 PHOTODARLINGTON OPTOCOUPLES IC",
+      "SKU": "A-223",
+      "ALT": ""
+    },
+    {
+      "name": "MOC3062 Zero Cross Phototriac Driver Optocoupler IC",
+      "SKU": "A-501",
+      "ALT": "A-909"
+    },
+    {
+      "name": "4N35 Optocouplers Phototransistor 30V IC",
+      "SKU": "A-035",
+      "ALT": ""
+    },
+    {
+      "name": "4N28M 4N28 PHOTOTRANSISTOR OPTOCOUPLERS IC",
+      "SKU": "A-874",
+      "ALT": ""
+    },
+    {
+      "name": "TL062 Dual Low-Power JFET-Input OP-AMP IC",
+      "SKU": "A-065",
+      "ALT": ""
+    },
+    {
+      "name": "TL062 Dual Low-Power JFET-Input OP-AMP IC",
+      "SKU": "A-1162",
+      "ALT": "A-065"
+    },
+    {
+      "name": "24LC01B/P 2401 1Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "24LC01B/P 24LC01 1Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-2367",
+      "ALT": ""
+    },
+    {
+      "name": "24LC16B-I/P 2416 16Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "24LC16B-I/P 24LC16 16Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-2942",
+      "ALT": ""
+    },
+    {
+      "name": "31002AL UTC31002A TELEPHONE TONE RINGER 29V IC UTC PDIP-8",
+      "SKU": "A-4162",
+      "ALT": ""
+    },
+    {
+      "name": "24LC512-I/P 24512 512Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "24LC512-I/P 24LC512 512Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-2368",
+      "ALT": ""
+    },
+    {
+      "name": "NJM2904 Dual Operational Amplifier General Purpose DIP-8 NJM2904D-#ZZZB",
+      "SKU": "A-1126",
+      "ALT": ""
+    },
+    {
+      "name": "NJM4558D 4558 Dual Operational Amplifier General Purpose IC",
+      "SKU": "A-1127",
+      "ALT": "A-061"
+    },
+    {
+      "name": "NJM4558 Dual Operational Amplifier General Purpose SIP-8 NJM4558L-#ZZZB",
+      "SKU": "A-1128",
+      "ALT": ""
+    },
+    {
+      "name": "BD54123F-E2 BD54123F Earth Leakage Current Detector 7.50mV Trip Voltage",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "BD54123F-E2 BD54123F Earth Leakage Current Detector IC 7.50mV Trip Voltage",
+      "SKU": "A-1810",
+      "ALT": ""
+    },
+    {
+      "name": "KA2803B Earth Leakage Detector 20V 8mA 300mW",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "KA2803B Earth Leakage Detector IC 20V 8mA 300mW",
+      "SKU": "A-1809",
+      "ALT": ""
+    },
+    {
+      "name": "MAX485EPA+ MAX485 RS-485/RS-422 Transceivers IC",
+      "SKU": "A-712",
+      "ALT": ""
+    },
+    {
+      "name": "RC4558DR RC4558 Dual Op-Amp IC Gain Bandwidth 3MHz",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "Gain Bandwidth 3MHz",
+      "SKU": "A-995",
+      "ALT": ""
+    },
+    {
+      "name": "TL072 Dual Operational Amplifier J-FET SOIC-8 TL072ACDR",
+      "SKU": "A-1136",
+      "ALT": ""
+    },
+    {
+      "name": "24LC256-I/P 24256 256Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "24LC256-I/P 24LC256 256Kbit Serial IC I2C Serial EEPROM IC",
+      "SKU": "A-2369",
+      "ALT": ""
+    },
+    {
+      "name": "MCP41010 MCP41010-I/P Single Digital Potentiometer 10K Ohm with SPI Interface IC",
+      "SKU": "A-2977",
+      "ALT": ""
+    },
+    {
+      "name": "UA741CP UA741 741 Single Op-Amp IC",
+      "SKU": "A-052",
+      "ALT": "A-1483"
+    },
+    {
+      "name": "MCP41050 MCP41050-I/P Single Digital Potentiometer 50K Ohm with SPI Interface IC",
+      "SKU": "A-4151",
+      "ALT": ""
+    },
+    {
+      "name": "TL082 Dual Operational Amplifier J-FET SOIC-8 TL082CDT",
+      "SKU": "A-1139",
+      "ALT": ""
+    },
+    {
+      "name": "TLC27L2CP TLC27L2 Dual Operational Amplifier Precision PDIP-8",
+      "SKU": "A-1145",
+      "ALT": ""
+    },
+    {
+      "name": "TLC2272 Dual Operational Amplifier General Purpose IC PDIP-8 TLC2272CP",
+      "SKU": "A-1142",
+      "ALT": ""
+    },
+    {
+      "name": "TLC272 Dual Operational Amplifier Precision PDIP-8 TLC272CP",
+      "SKU": "A-1143",
+      "ALT": ""
+    },
+    {
+      "name": "LM1458 HA17458 1458 DUAL COMPENSATED OP-AMP IC",
+      "SKU": "A-220",
+      "ALT": ""
+    },
+    {
+      "name": "LM386 LM386L Audio Power Amplifier IC",
+      "SKU": "A-206",
+      "ALT": ""
+    },
+    {
+      "name": "LM1458 MC1458L 1458 IC DUAL OPERATIONAL AMPLIFIER",
+      "SKU": "A-221",
+      "ALT": ""
+    },
+    {
+      "name": "TL082 TL082CP J-FET DUAL OP-AMP IC",
+      "SKU": "A-209",
+      "ALT": ""
+    },
+    {
+      "name": "CA3130EZ CA3130E CA3130 IC OPERATING AMPLIFIER",
+      "SKU": "A-277",
+      "ALT": ""
+    },
+    {
+      "name": "NE5534 IC 5534 Low-Noise Operational Amplifier IC",
+      "SKU": "A-250",
+      "ALT": ""
+    },
+    {
+      "name": "HA17741 17741 IC OPERATIONAL AMPLIFIER",
+      "SKU": "",
+      "ALT": ""
+    },
+    {
+      "name": "LF356N LF356 356 IC OPERATIONAL AMPLIFIER",
+      "SKU": "A-284",
+      "ALT": ""
+    },
+    {
+      "name": "TL071 Operational Amplifier J-FET PDIP-8 TL071CP",
+      "SKU": "A-1135",
+      "ALT": ""
+    },
+    {
+      "name": "LM833N LM833 Dual Low Noise Audio Op-Amp IC",
+      "SKU": "A-259",
+      "ALT": ""
+    },
+    {
+      "name": "TL061 Operational Amplifier J-FET PDIP-8 TL061CP",
+      "SKU": "A-1133",
+      "ALT": "A-295"
+    },
+    {
+      "name": "LM318 Operational Amplifier High Speed PDIP-8 LM318N",
+      "SKU": "A-1112",
+      "ALT": ""
+    },
+    {
+      "name": "LM1458N LM1458 1458 IC DUAL OPERATIONAL AMPLIFIER",
+      "SKU": "A-286",
+      "ALT": ""
+    },
+    {
+      "name": "LM4250CN LM4250 4250 PROGRAMMABLE OP-AMP IC",
+      "SKU": "A-275",
+      "ALT": ""
+    },
+    {
+      "name": "LM358 Dual Operational Amplifier General Purpose SOIC-8 LM358DR",
+      "SKU": "A-1117",
+      "ALT": ""
+    },
+    {
+      "name": "L272 Dual Operational Amplifier General Purpose PDIP-8 L272M",
+      "SKU": "A-1109",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2822 TDA2822M Audio Amplifier IC",
+      "SKU": "A-1003",
+      "ALT": ""
+    },
+    {
+      "name": "LM1458MX LM1458 1458 IC DUAL OPERATIONAL AMPLIFIER",
+      "SKU": "A-285",
+      "ALT": ""
+    },
+    {
+      "name": "NJM4558D 4558 Dual Operational Amplifier General Purpose IC",
+      "SKU": "A-1132",
+      "ALT": "A-061"
+    },
+    {
+      "name": "TDA2822 TDA2822L Audio Amplifier IC",
+      "SKU": "A-1002",
+      "ALT": "A-1509"
+    },
+    {
+      "name": "LM386 LM386N Audio Amplifier IC",
+      "SKU": "A-994",
+      "ALT": ""
+    },
+    {
+      "name": "LM301 Operational Amplifier General Purpose PDIP-8 LM301AN",
+      "SKU": "A-1111",
+      "ALT": ""
+    },
+    {
+      "name": "NJM2068 Dual Operational Amplifier Bipolar PDIP-8 NJM2068D IC",
+      "SKU": "A-1124",
+      "ALT": ""
+    },
+    {
+      "name": "LM386 LM386MX Audio Amplifier IC",
+      "SKU": "A-993",
+      "ALT": ""
+    },
+    {
+      "name": "TL061 Operational Amplifier IC J-FET",
+      "SKU": "A-295",
+      "ALT": "A-1133"
+    },
+    {
+      "name": "TJM4558 Dual Operational Amplifier Wide Band SOIC-8 TJM4558CDT",
+      "SKU": "A-1131",
+      "ALT": ""
+    },
+    {
+      "name": "OP07 Operational Amplifier Precision PDIP-8 OP07CP",
+      "SKU": "A-1130",
+      "ALT": ""
+    },
+    {
+      "name": "LM748 Operational Amplifier General Purpose IC PDIP-8",
+      "SKU": "A-1119",
+      "ALT": ""
+    },
+    {
+      "name": "LM358 Dual Operational Amplifier General Purpose SOIC-8 LM358DT",
+      "SKU": "A-1118",
+      "ALT": ""
+    },
+    {
+      "name": "TL072 LOW NOISE J-FET DUAL OP-AMP IC",
+      "SKU": "A-037",
+      "ALT": ""
+    },
+    {
+      "name": "NE5532 5532 IC Dual Low Noise Op-Amp",
+      "SKU": "A-031",
+      "ALT": ""
+    },
+    {
+      "name": "LM358P LM358 358 Low Power Dual Op-Amp IC",
+      "SKU": "A-045",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2822 TDA2822D Audio Amplifier IC",
+      "SKU": "A-1001",
+      "ALT": ""
+    },
+    {
+      "name": "LF353P LF353 IC 353 JFET-INPUT DUAL OP-AMP",
+      "SKU": "A-033",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0832 A/D converter 8 bit 2 ch. Serial PDIP-8",
+      "SKU": "A-1093",
+      "ALT": ""
+    },
+    {
+      "name": "MAX1044 MAX1044CPA Switched Capacitor Voltage Converter IC",
+      "SKU": "A-846",
+      "ALT": ""
+    },
+    {
+      "name": "TDA2822 TDA2822L Audio Amplifier IC",
+      "SKU": "A-1509",
+      "ALT": "A-1002"
+    },
+    {
+      "name": "CA3140EZ CA3140 4.5MHz BiMOS Op-Amp IC",
+      "SKU": "A-044",
+      "ALT": ""
+    },
+    {
+      "name": "OPA2604 OPA2604AP Low Distortion Operational Amplifier IC",
+      "SKU": "A-895",
+      "ALT": ""
+    },
+    {
+      "name": "NJM4558D 4558 Dual Operational Amplifier General Purpose IC",
+      "SKU": "A-061",
+      "ALT": "A-1132"
+    },
+    {
+      "name": "DS1307 Maxim 64 x 8 Serial Real-Time Clock IC",
+      "SKU": "A-254",
+      "ALT": ""
+    },
+    {
+      "name": "ADC0831CCN ADC0831 8-Bit A/D Converter IC",
+      "SKU": "A-054",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY85V-10PU Microcontroller IC",
+      "SKU": "A-424",
+      "ALT": ""
+    },
+    {
+      "name": "MC34119 MC34119P Audio Amplifier IC",
+      "SKU": "A-996",
+      "ALT": ""
+    },
+    {
+      "name": "NE555 IC 555 Timer DIP-8",
+      "SKU": "A-249",
+      "ALT": ""
+    },
+    {
+      "name": "TL022CP TL022 Operational Amplifier IC",
+      "SKU": "A-917",
+      "ALT": ""
+    },
+    {
+      "name": "NE555 IC 555 Timer PDIP-8",
+      "SKU": "A-032",
+      "ALT": ""
+    },
+    {
+      "name": "ATTINY85 ATTINY85-20PU 8-bit 20MHz Microcontroller IC",
+      "SKU": "A-307",
+      "ALT": ""
+    },
+    {
+      "name": "LM393P LM393 IC LOW POWER DUAL VOLTAGE COMPARATORS",
+      "SKU": "A-023",
+      "ALT": ""
+    },
+    {
+      "name": "LM567CN LM567 567 Tone Decoder PLL IC",
+      "SKU": "A-039",
+      "ALT": ""
+    },
+    {
+      "name": "IR2127 FET Driver 200nS On/150nS Off 1 outputs 250mA Non-Inverting PDIP-8",
+      "SKU": "A-1027",
+      "ALT": ""
+    },
+    {
+      "name": "IR2153 SELF-OSCILLATING HALF-BRIDGE DRIVER IC",
+      "SKU": "A-919",
+      "ALT": ""
+    },
+    {
+      "name": "NE555D NE555 IC 555 SMD Timer",
+      "SKU": "A-074",
+      "ALT": ""
+    },
+    {
+      "name": "6N137 High speed Logic Gate Optocouples IC",
+      "SKU": "A-871",
+      "ALT": ""
+    },
+    {
+      "name": "TC4427 FET Driver 20nS On/40nS Off 2 outputs 1.5A Non-Inverting SOIC-8",
+      "SKU": "A-1032",
+      "ALT": ""
+    },
+    {
+      "name": "ICL7660SCPAZ ICL7660 CMOS Voltage Converter IC",
+      "SKU": "A-1051",
+      "ALT": "A-5439"
+    },
+    {
+      "name": "ICL7660CPAZ ICL7660 CMOS Voltage Converter IC",
+      "SKU": "A-1385",
+      "ALT": "A-5439"
+    },
+    {
+      "name": "OP07 Operational Amplifier Precision SOIC-8 OP07CDR",
+      "SKU": "A-1129",
+      "ALT": ""
+    },
+    {
+      "name": "MCP41100 MCP41100-I/P Digital Potentiometer 100K Ohm IC",
+      "SKU": "A-928",
+      "ALT": ""
+    }
+  ]
