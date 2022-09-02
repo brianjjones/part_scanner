@@ -6,11 +6,11 @@ do
     echo $file ------
     BASEFILE="$(basename $file)"
     mkdir -p output
-    # Replace white with black
+    # Replace anything not black with white
     convert $file -fill white -fuzz 17% +opaque black "output/b_$BASEFILE"
     # Save a rotated too
     convert "output/b_$BASEFILE" -rotate 90 "output/b_r_$BASEFILE"
-    # Do the same for white text. First make the black text another color
+    # Do the same for white text. First make the black text another color so it gets deleted and I don't read the black text again.
     convert $file -fill black -fuzz 20% -floodfill +0+0 white  "output/w_$BASEFILE"
     convert "output/w_$BASEFILE" -fill black -fuzz 13% +opaque white "output/w_$BASEFILE"
     # Make text black

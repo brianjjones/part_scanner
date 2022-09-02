@@ -1,7 +1,6 @@
 <script src='https://unpkg.com/tesseract.js@v2.0.0/dist/tesseract.min.js'></script>
 <script src="index.js"></script>
-<!-- <script src="eng.traineddata"></script> -->
-<!-- <embed src="eng.traineddata"> -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,47 +9,15 @@
     <div id="lines" style="background-color:yellow"></div>
     <div id="words"style="background-color:red"></div>
     <div id="all" style="background-color:teal"></div>
-    <canvas id="img_canvas"></canvas>
+    <!-- <img id="testimg" src="firefly.jpg" width="900" height="1000"> -->
+
   </head>
   <body>
       <button onclick="hello()">CHECK!!!</button>
-    <!-- <script >
-        const exampleImage = 'https://tesseract.projectnaptha.com/img/eng_bw.png';
-        const { createWorker } = Tesseract;
-        const worker = createWorker({
-            langPath: '/langs/',
-            logger: m => console.log(m),
-        });
-        (async () => {
-            await worker.load();
-        })();
-        (async () => {
-            await worker.loadLanguage('eng');
-            console.log("LOADED")
-        })();
-        // (async () => {
-        //     await worker.initialize('eng');
-        //     console.log("INITIALIZED");
-        // })();
-        (async () => {
-            // const { data: { text } } = await worker.recognize("https://blogger.googleusercontent.com/img/a/AVvXsEgbNK2C-YxBuBkX7Nu-qZioZ2LVPcsfPKrJvKl_iDXtMvNl0AsVrYd3pqw9e85jGgAmsfXKR9R8ZY-aQINoYgs-6nuJ-G7MoCnA91nj1WLV_EvL9i2jowy7JSfcZvjf4SrqTlyujbIp0y90PHl_3CbkykUJujSk7IfIiTSSfUByzXjZGQSg238RosfSGg=s1356");
-            // const { data: { text } } = await worker.recognize("fuzz.png");
-            console.log("text");
-        })();
-      console.log("BJONES THIS IS A TEST");
-      function hello(){
-         console.log("HELLO!!! things should be loaded") ;
-         (async () => {
-
-            await worker.initialize('eng');
-            // let result = await worker.recognize(exampleImage);
-            // console.log(result.data);
-
-            // const { data: { text } } = await worker.recognize("https://blogger.googleusercontent.com/img/a/AVvXsEgbNK2C-YxBuBkX7Nu-qZioZ2LVPcsfPKrJvKl_iDXtMvNl0AsVrYd3pqw9e85jGgAmsfXKR9R8ZY-aQINoYgs-6nuJ-G7MoCnA91nj1WLV_EvL9i2jowy7JSfcZvjf4SrqTlyujbIp0y90PHl_3CbkykUJujSk7IfIiTSSfUByzXjZGQSg238RosfSGg=s1356");
-            // const { data: { text } } = await worker.recognize("fuzz.png");
-
-        })();
-      }
-    </script> -->
+      <canvas id="img_canvas" width="1000" height="1000" style="border:1px solid green""></canvas>
+    <canvas id="img_canvas_bw_h" width="1000" height="1000" style="border:1px solid red"></canvas>
+    <canvas id="img_canvas_bw_v" width="1000" height="1000" style="border:1px solid blue"></canvas>
+    <canvas id="img_canvas_inv_h" width="1000" height="1000" style="border:1px solid cyan"></canvas>
+    <canvas id="img_canvas_inv_v" width="1000" height="1000" style="border:1px solid purple"></canvas>
   </body>
 </html>
