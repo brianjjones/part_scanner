@@ -9,6 +9,8 @@ let word_bbox = [{}];
 let globCount = 0;
 let saveResults = "";
 let newText = "";
+let curr_words = [];
+let dup_words = [];
 const { createWorker } = Tesseract;
 
 // const worker = createWorker;
@@ -86,23 +88,22 @@ function makeBoxes(ctx) {
 }
 async function find_words(img) {
   let results = await worker.recognize(img);
-  const words = document.getElementById('words');
-  for (let i = 0; i < results.data.words.length; i++) {
-    console.log("results.data.words[i].text + ', '");
-    words.textContent += results.data.words[i].text + ', ';
-    saveResults += results.data.words[i].text + ', ';
-    word_bbox[i] = { "text": results.data.words[i].text, "bbox": results.data.words[i].bbox };
+  let res_words = results.data.words;
+  for (let i = 0; i < res_words.length; i++ ){
+    var para = document.createElement("div");
+    para.id = "word_" + i;
+    // var node = document.createTextNode(res_words[i].text + " -> " + res_words[i].bbox.x0 + "," + res_words[i].bbox.y0 + "," + res_words[i].bbox.x1 + "," + res_words[i].bbox.y1 );
+    para.innerText = res_words[i].text + " -> " + res_words[i].bbox.x0 + "," + res_words[i].bbox.y0 + "," + res_words[i].bbox.x1 + "," + res_words[i].bbox.y1;
+    para.onmouseover = (e) => {
+      e.currentTarget.style = "border:5px solid purple"
+      console.log("HOVERING! over e" );
+    }
+    // para.appendChild(node);
+    var element = document.getElementById("curr_words");
+    element.appendChild(para);
   }
-  words.textContent += "---- DERP!";
+  curr_words = curr_words.concat(results.data.words);
 
-  const lines = document.getElementById('lines');
-  let lines_bbox = [{}];
-  for (let i = 0; i < results.data.lines.length; i++) {
-    lines.textContent += results.data.lines[i].text + ', ';
-    lines_bbox[i] = { "text": results.data.lines[i].text, "bbox": results.data.lines[i].bbox };
-  }
-  const all = document.getElementById('all');
-  all.textContent += results.data.text;
 }
 
 async function bAndW(can, ctx, img) {
@@ -275,9 +276,21 @@ function hello() {
         rotimg.src = img_canvas_inv_h.toDataURL();
         rotimg.onload = function() {
           rotate(ctx_inv_v, 90, img_canvas_bw_v.width, img_canvas_bw_v.height, rotimg);
-          find_words(rotimg);
+          // find_words(rotimg);
         }
 
+        let wordimg = document.createElement('img');
+        wordimg.src = img_canvas_inv_v.toDataURL();
+        let inv_v_words = [];
+        wordimg.onload = function() {
+
+          let new_words = find_words(wordimg);
+          let test = "";
+        }
+        // let test = [];
+        // let test2 = [1,2,3];
+        // test.concat(test2);
+        // console.log(test);
         // let testimg = document.getElementById('testimg');
         // testimg.src = img_canvas_inv_h.toDataURL();
         // FIND WORDS
