@@ -92,12 +92,13 @@ async function find_words(img) {
   for (let i = 0; i < res_words.length; i++ ){
     var para = document.createElement("div");
     para.id = "word_" + i;
+    para.classList.add("result");
     // var node = document.createTextNode(res_words[i].text + " -> " + res_words[i].bbox.x0 + "," + res_words[i].bbox.y0 + "," + res_words[i].bbox.x1 + "," + res_words[i].bbox.y1 );
     para.innerText = res_words[i].text + " -> " + res_words[i].bbox.x0 + "," + res_words[i].bbox.y0 + "," + res_words[i].bbox.x1 + "," + res_words[i].bbox.y1;
-    para.onmouseover = (e) => {
-      e.currentTarget.style = "border:5px solid purple"
-      console.log("HOVERING! over e" );
-    }
+    // para.onmouseover = (e) => {
+    //   e.currentTarget.style = "border:5px solid purple"
+    //   console.log("HOVERING! over e" );
+    // }
     // para.appendChild(node);
     var element = document.getElementById("curr_words");
     element.appendChild(para);

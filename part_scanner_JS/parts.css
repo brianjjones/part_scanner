@@ -1,0 +1,31 @@
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+#main.flex-container {
+    display: flex;
+  }
+
+div.result {
+    background-color: red;
+    color: lightblue;
+    transition: all .2s ease-in-out;
+}
+
+div.result:hover {
+    background-color: green;
+    /* transform: scale(1.1); */
+}
+
+.column {
+    float: left;
+  }
+
+  #pics.column {
+    width: 75%;
+  }
+
+  #parttext.column {
+    width: 25%;
+  }

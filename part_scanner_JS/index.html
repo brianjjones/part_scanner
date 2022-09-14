@@ -1,24 +1,38 @@
 <script src='https://unpkg.com/tesseract.js@v2.0.0/dist/tesseract.min.js'></script>
 <script src="index.js"></script>
+<link rel="stylesheet" href="parts.css">
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>hello-wasm example</title>
-    <div id="lines" style="background-color:yellow"></div>
-    <div id="words"style="background-color:red"></div>
-    <div id="all" style="background-color:teal"></div>
-    <!-- <img id="testimg" src="firefly.jpg" width="900" height="1000"> -->
 
-  </head>
-  <body>
-      <button onclick="hello()">CHECK!!!</button>
+<head>
+  <meta charset="utf-8">
+  <title>hello-wasm example</title>
+  <div id="lines" style="background-color:yellow"></div>
+  <div id="words" style="background-color:red"></div>
+  <div id="all" style="background-color:teal"></div>
+
+</head>
+
+<body>
+  <div id="main" class="row">
+    <div id="pics" class="column">
       <canvas id="img_canvas" width="1000" height="1000" style="border:1px solid green"></canvas>
-    <canvas id="img_canvas_bw_h" width="1000" height="1000" style="border:1px solid red"></canvas>
-    <canvas id="img_canvas_bw_v" width="1000" height="1000" style="border:1px solid blue"></canvas>
-    <canvas id="img_canvas_inv_h" width="1000" height="1000" style="border:1px solid cyan"></canvas>
-    <canvas id="img_canvas_inv_v" width="1000" height="1000" style="border:1px solid purple"></canvas>
-    <div id="curr_words" width="1000" height="1000" style="border:3px solid yellowgreen">"Hello!"</div>
-  </body>
+      <canvas id="img_canvas_bw_h" width="1000" height="1000" style="border:1px solid red"></canvas>
+      <canvas id="img_canvas_bw_v" width="1000" height="1000" style="border:1px solid blue"></canvas>
+      <canvas id="img_canvas_inv_h" width="1000" height="1000" style="border:1px solid cyan"></canvas>
+      <canvas id="img_canvas_inv_v" width="1000" height="1000" style="border:1px solid purple"></canvas>
+
+    </div>
+    <div id="parttext" class="column">
+      <button onclick="hello()">CHECK!!!</button>
+
+      <div id="curr_words" width="1000" height="1000" style="border:3px solid yellowgreen">"Hello!"</div>
+
+    </div>
+
+
+  </div>
+</body>
+
 </html>
