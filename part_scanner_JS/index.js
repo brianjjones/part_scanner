@@ -10,6 +10,10 @@ let globCount = 0;
 let saveResults = "";
 let newText = "";
 let curr_words = [];
+let bw_h_words = [];
+let bw_v_words = [];
+let inv_h_words = [];
+let inv_v_words = [];
 let dup_words = [];
 const { createWorker } = Tesseract;
 
@@ -77,6 +81,18 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
   }
 }
 
+function post_results(list_id, words) {
+  let word_arr = words.words;
+  for (let i = 0; i < word_arr.length; i++ ){
+    var para = document.createElement("div");
+    para.id = "word_" + i;
+    para.classList.add("result");
+    para.innerText = word_arr[i].text + " -> " + word_arr[i].bbox.x0 + "," + word_arr[i].bbox.y0 + "," + word_arr[i].bbox.x1 + "," + word_arr[i].bbox.y1;
+    var element = document.getElementById(list_id);
+    element.appendChild(para);
+  }
+}
+
 function makeBoxes(ctx) {
   for (let j = 0; j < word_bbox.length; j++) {
     ctx.beginPath();
@@ -89,22 +105,11 @@ function makeBoxes(ctx) {
 async function find_words(img) {
   let results = await worker.recognize(img);
   let res_words = results.data.words;
-  for (let i = 0; i < res_words.length; i++ ){
-    var para = document.createElement("div");
-    para.id = "word_" + i;
-    para.classList.add("result");
-    // var node = document.createTextNode(res_words[i].text + " -> " + res_words[i].bbox.x0 + "," + res_words[i].bbox.y0 + "," + res_words[i].bbox.x1 + "," + res_words[i].bbox.y1 );
-    para.innerText = res_words[i].text + " -> " + res_words[i].bbox.x0 + "," + res_words[i].bbox.y0 + "," + res_words[i].bbox.x1 + "," + res_words[i].bbox.y1;
-    // para.onmouseover = (e) => {
-    //   e.currentTarget.style = "border:5px solid purple"
-    //   console.log("HOVERING! over e" );
-    // }
-    // para.appendChild(node);
-    var element = document.getElementById("curr_words");
-    element.appendChild(para);
-  }
-  curr_words = curr_words.concat(results.data.words);
 
+  // TODO move this to a function to fill the results div.
+
+  curr_words = curr_words.concat(res_words);
+  return res_words;
 }
 
 async function bAndW(can, ctx, img) {
@@ -215,6 +220,12 @@ function rotate(ctx, degrees, width, height, img){
 
 function hello() {
   console.log("HELLO!!! things should be loaded");
+  // RESET THE WORDS
+  curr_words = [];
+  bw_h_words = [];
+  bw_v_words = [];
+  inv_h_words = [];
+  inv_v_words = [];
   (async () => {
 
     await worker.initialize('eng');
@@ -282,11 +293,23 @@ function hello() {
 
         let wordimg = document.createElement('img');
         wordimg.src = img_canvas_inv_v.toDataURL();
-        let inv_v_words = [];
-        wordimg.onload = function() {
+        // let inv_v_words = [];
 
-          let new_words = find_words(wordimg);
-          let test = "";
+        //BJONES TODO this works! So copy it for EACH IMAGE.
+        //But first break up these functions into different JS files so its not so cluttered.
+        wordimg.onload = function() {
+          worker.recognize(wordimg).then((new_words) => {
+            post_results("inv_v_words", new_words.data);
+            inv_v_words.concat(new_words.data);
+          });
+
+          //await worker.recognize(img)
+          // let new_words = find_words(wordimg);.then((value) =>
+          // find_words(wordimg).then((new_words) => {
+          //   post_results(inv_v_words, new_words);
+          // });
+
+
         }
         // let test = [];
         // let test2 = [1,2,3];

@@ -10,6 +10,7 @@
 div.result {
     background-color: red;
     color: lightblue;
+    font-size: 30px;
     transition: all .2s ease-in-out;
 }
 
