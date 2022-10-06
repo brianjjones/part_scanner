@@ -15,14 +15,17 @@ let bw_v_words = [];
 let inv_h_words = [];
 let inv_v_words = [];
 let dup_words = [];
-const { createWorker } = Tesseract;
+let caps_json = [];
+let resistor_json = [];
+let ic_json = [];
 
-// const worker = createWorker;
+const { createWorker } = Tesseract;
 
 const worker = createWorker({
   // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
   logger: m => console.log(m),
 });
+
 (async () => {
   await worker.load();
   await worker.loadLanguage('eng');
@@ -31,192 +34,8 @@ const worker = createWorker({
   console.log("INITIALIZED");
 })();
 
-function invertData(imgData) {
 
-  for (let i = 0; i < imgData.data.length; i += 4) {
-    imgData.data[i] = 255 - imgData.data[i];
-    imgData.data[i + 1] = 255 - imgData.data[i + 1];
-    imgData.data[i + 2] = 255 - imgData.data[i + 2];
-    imgData.data[i + 3] = 255;
-  }
-}
 
-function changeColor(imgData, find_color, replace_color, fuzz) {
-
-  for (var i = 0; i < imgData.data.length; i += 4) {
-
-    // if (imgData.data[i] == find_color.r &&
-    //   imgData.data[i + 1] == find_color.g &&
-    //   imgData.data[i + 2] == find_color.b
-    // ) {
-    if (checkFuzz(imgData.data[i], find_color.r, fuzz) &&
-      checkFuzz(imgData.data[i + 1], find_color.g, fuzz) &&
-      checkFuzz(imgData.data[i + 2], find_color.g, fuzz)
-    ) {
-      // change to your new rgb
-      imgData.data[i] = replace_color.r;
-      imgData.data[i + 1] = replace_color.g;
-      imgData.data[i + 2] = replace_color.b;
-      imgData.data[i + 3] = replace_color.a;
-    }
-  }
-}
-
-// TODO change num1 to {r,g,b}?
-function checkFuzz(num1, num2, fuzz) {
-  return Math.abs(num1 - num2) < fuzz;
-}
-
-// Any color that isn't the find_color, replace it.
-function onlyColor(imgData, find_color, replace_color, fuzz) {
-  for (var i = 0; i < imgData.data.length; i += 4) {
-    if (!checkFuzz(imgData.data[i], find_color.r, fuzz) ||
-      !checkFuzz(imgData.data[i + 1], find_color.g, fuzz) ||
-      !checkFuzz(imgData.data[i + 2], find_color.g, fuzz)
-    ) {
-      imgData.data[i] = replace_color.r;
-      imgData.data[i + 1] = replace_color.g;
-      imgData.data[i + 2] = replace_color.b;
-    }
-  }
-}
-
-function post_results(list_id, words) {
-  let word_arr = words.words;
-  for (let i = 0; i < word_arr.length; i++ ){
-    var para = document.createElement("div");
-    para.id = "word_" + i;
-    para.classList.add("result");
-    para.innerText = word_arr[i].text + " -> " + word_arr[i].bbox.x0 + "," + word_arr[i].bbox.y0 + "," + word_arr[i].bbox.x1 + "," + word_arr[i].bbox.y1;
-    var element = document.getElementById(list_id);
-    element.appendChild(para);
-  }
-}
-
-function makeBoxes(ctx) {
-  for (let j = 0; j < word_bbox.length; j++) {
-    ctx.beginPath();
-    ctx.strokeStyle = 'green';
-    ctx.lineWidth = 2;
-    ctx.rect(word_bbox[j].bbox.x0, word_bbox[j].bbox.x1, word_bbox[j].bbox.y0, word_bbox[j].bbox.y1);
-    ctx.stroke();
-  }
-}
-async function find_words(img) {
-  let results = await worker.recognize(img);
-  let res_words = results.data.words;
-
-  // TODO move this to a function to fill the results div.
-
-  curr_words = curr_words.concat(res_words);
-  return res_words;
-}
-
-async function bAndW(can, ctx, img) {
-  onlyColor(img, { 'r': 0, 'g': 0, 'b': 0 }, { 'r': 255, 'g': 255, 'b': 255 }, 20);
-  // invertData(img);
-  ctx.putImageData(img, 0, 0);
-
-}
-
-// floodFill code is from https://codepen.io/Geeyoam/pen/vLGZzG
-function getColorAtPixel(imageData, x, y) {
-  const {width, data} = imageData
-
-  return {
-    r: data[4 * (width * y + x) + 0],
-    g: data[4 * (width * y + x) + 1],
-    b: data[4 * (width * y + x) + 2],
-    a: data[4 * (width * y + x) + 3]
-  }
-}
-
-function setColorAtPixel(imageData, color, x, y) {
-  const {width, data} = imageData
-
-  data[4 * (width * y + x) + 0] = color.r & 0xff
-  data[4 * (width * y + x) + 1] = color.g & 0xff
-  data[4 * (width * y + x) + 2] = color.b & 0xff
-  data[4 * (width * y + x) + 3] = color.a & 0xff
-}
-
-function colorMatch(a, b) {
-  return a.r === b.r && a.g === b.g && a.b === b.b && a.a === b.a
-}
-
-// floodFill code is from https://codepen.io/Geeyoam/pen/vLGZzG
-function floodFill(imageData, newColor, x, y) {
-  const {width, height, data} = imageData
-  const stack = []
-  const baseColor = getColorAtPixel(imageData, x, y)
-  let operator = {x, y}
-
-  // Check if base color and new color are the same
-  if (colorMatch(baseColor, newColor)) {
-    return
-  }
-
-  // Add the clicked location to stack
-  stack.push({x: operator.x, y: operator.y})
-
-  while (stack.length) {
-    operator = stack.pop()
-    let contiguousDown = true
-    let contiguousUp = true
-    let contiguousLeft = false
-    let contiguousRight = false
-
-    // Move to top most contiguousDown pixel
-    while (contiguousUp && operator.y >= 0) {
-      operator.y--
-      contiguousUp = colorMatch(getColorAtPixel(imageData, operator.x, operator.y), baseColor)
-    }
-
-    // Move downward
-    while (contiguousDown && operator.y < height) {
-      setColorAtPixel(imageData, newColor, operator.x, operator.y)
-
-      // Check left
-      if (operator.x - 1 >= 0 && colorMatch(getColorAtPixel(imageData, operator.x - 1, operator.y), baseColor)) {
-        if (!contiguousLeft) {
-          contiguousLeft = true
-          stack.push({x: operator.x - 1, y: operator.y})
-        }
-      } else {
-        contiguousLeft = false
-      }
-
-      // Check right
-      if (operator.x + 1 < width && colorMatch(getColorAtPixel(imageData, operator.x + 1, operator.y), baseColor)) {
-        if (!contiguousRight) {
-          stack.push({x: operator.x + 1, y: operator.y})
-          contiguousRight = true
-        }
-      } else {
-        contiguousRight = false
-      }
-
-      operator.y++
-      contiguousDown = colorMatch(getColorAtPixel(imageData, operator.x, operator.y), baseColor)
-    }
-  }
-}
-
-function fetchWords(img_txt) {
-  (async () => {
-    // await worker.initialize('eng');
-    let results = await worker.recognize(img_txt);
-  })
-}
-
-function rotate(ctx, degrees, width, height, img){
-  ctx.clearRect(0,0,width,height);
-  ctx.save();
-  ctx.translate(width/2, height/2);
-  ctx.rotate(degrees*Math.PI/180);
-  ctx.drawImage(img, -img.width/2, -img.width/2);
-  ctx.restore();
-}
 
 function hello() {
   console.log("HELLO!!! things should be loaded");
@@ -247,6 +66,16 @@ function hello() {
     const img = new Image();
     var myImage;
 
+    // const request = new Request(requestURL);
+
+    let response = await fetch("caps.json");
+    caps_json = await response.json();
+    response = await fetch("res.json");
+    res_json = await response.json();
+    response = await fetch("ic.json");
+    ic_json = await response.json();
+
+
     img.src = 'http://4.bp.blogspot.com/-ak7dCtDZGmQ/UOLHj153GNI/AAAAAAAAAYc/BYHzu-jUAOc/s1600/Dan-Armstrong-Red-Ranger.png';
 
     img.onload = function () {
@@ -262,7 +91,6 @@ function hello() {
         let img_data_b = ctx.getImageData(0, 0, img_canvas.width, img_canvas.height);
         let img_data_w = ctx.getImageData(0, 0, img_canvas.width, img_canvas.height);
         // TODO change this to only change the data, don't pass canvas stuff
-        // bAndW(img_canvas_bw_h, ctx_bw_h, img_data);
         floodFill(img_data_b, col, 0, 0);
         floodFill(img_data_b, col2, 0, 0);
 
@@ -288,41 +116,48 @@ function hello() {
         rotimg.src = img_canvas_inv_h.toDataURL();
         rotimg.onload = function() {
           rotate(ctx_inv_v, 90, img_canvas_bw_v.width, img_canvas_bw_v.height, rotimg);
-          // find_words(rotimg);
         }
 
-        let wordimg = document.createElement('img');
-        wordimg.src = img_canvas_inv_v.toDataURL();
-        // let inv_v_words = [];
 
-        //BJONES TODO this works! So copy it for EACH IMAGE.
-        //But first break up these functions into different JS files so its not so cluttered.
-        wordimg.onload = function() {
-          worker.recognize(wordimg).then((new_words) => {
-            post_results("inv_v_words", new_words.data);
-            inv_v_words.concat(new_words.data);
-          });
+        let img_list = [
+                        {"img_cv": img_canvas_inv_v, "img_ctx": ctx_inv_v, "result_div": "inv_v_words"},
+                        {"img_cv": img_canvas_inv_h, "img_ctx": ctx_inv_h, "result_div": "inv_h_words"},
+                        {"img_cv": img_canvas_bw_v, "img_ctx": ctx_bw_v, "result_div": "bw_v_words"},
+                        {"img_cv": img_canvas_bw_h, "img_ctx": ctx_bw_h, "result_div": "bw_h_words"}
+        ];
 
-          //await worker.recognize(img)
-          // let new_words = find_words(wordimg);.then((value) =>
-          // find_words(wordimg).then((new_words) => {
-          //   post_results(inv_v_words, new_words);
-          // });
+        scan(img_list, img_list[3].img_cv, img_list[3].img_ctx, img_list[3].result_div, 2);
 
-
-        }
-        // let test = [];
-        // let test2 = [1,2,3];
-        // test.concat(test2);
-        // console.log(test);
-        // let testimg = document.getElementById('testimg');
-        // testimg.src = img_canvas_inv_h.toDataURL();
-        // FIND WORDS
-        // find_words(testimg);
       }
     };
 
-    // console.log(results.data);
-
   })();
+}
+
+// BJONES TODO note that worker can only do one image a time. So I need to wait until
+// its ready before doing the next image.
+// TODO find a better way to wait for each image to be scanned.
+function scan(img_list, img_cv, img_ctx, result_div, next) {
+  let v_b = document.createElement('img');
+        v_b.src = img_cv.toDataURL();
+        v_b.onload = function() {
+          worker.recognize(v_b).then((new_words) => {
+            let found_res = find_resistors(new_words.data.words);
+            let found_cap = find_capacitors(new_words.data.words);
+            let found_trans = find_transistor(new_words.data.words);
+            post_results(result_div, found_res, img_ctx);
+            post_results(result_div, found_cap, img_ctx);
+            post_results(result_div, found_trans, img_ctx);
+            //BJONES don't need to concat probably because I'm not making
+            //Multiple passes currently. So I only need to save one result from that image.
+            // bw_v_words = bw_v_words.concat(new_words.data);
+
+            bw_v_words = new_words.data;
+            if (next >= 0) {
+              scan(img_list, img_list[next].img_cv, img_list[next].img_ctx, img_list[next].result_div, next -1);
+            }
+            // makeAllBoxes(ctx_inv_v, bw_v_words.words, "green");
+          });
+
+        }
 }
