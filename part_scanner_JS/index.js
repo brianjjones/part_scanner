@@ -22,17 +22,50 @@ let ic_json = [];
 const { createWorker } = Tesseract;
 
 // BJONES TODO  can I create multiple workers and do each image at the same time?
-const worker = createWorker({
+const worker_bw_h = createWorker({
+  // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
+  logger: m => console.log(m),
+});
+
+const worker_bw_v = createWorker({
+  // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
+  logger: m => console.log(m),
+});
+
+const worker_inv_h = createWorker({
+  // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
+  logger: m => console.log(m),
+});
+
+const worker_inv_v = createWorker({
   // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
   logger: m => console.log(m),
 });
 
 (async () => {
-  await worker.load();
-  await worker.loadLanguage('eng');
+  await worker_bw_h.load();
+  await worker_bw_h.loadLanguage('eng');
   console.log("LOADED");
-  await worker.initialize('eng');
-  console.log("INITIALIZED");
+  await worker_bw_h.initialize('eng');
+  console.log(" worker_bw_h INITIALIZED");
+
+  await worker_bw_v.load();
+  await worker_bw_v.loadLanguage('eng');
+  console.log("LOADED");
+  await worker_bw_v.initialize('eng');
+  console.log("worker_bw_v INITIALIZED");
+
+  await worker_inv_h.load();
+  await worker_inv_h.loadLanguage('eng');
+  console.log("LOADED");
+  await worker_inv_h.initialize('eng');
+  console.log("worker_inv_h INITIALIZED");
+
+  await worker_inv_v.load();
+  await worker_inv_v.loadLanguage('eng');
+  console.log("LOADED");
+  await worker_inv_v.initialize('eng');
+  console.log("worker_inv_v INITIALIZED");
 })();
 
 
@@ -48,7 +81,10 @@ function hello() {
   inv_v_words = [];
   (async () => {
 
-    await worker.initialize('eng');
+    await worker_bw_h.initialize('eng');
+    await worker_bw_v.initialize('eng');
+    await worker_inv_h.initialize('eng');
+    await worker_inv_v.initialize('eng');
     const img_canvas = document.getElementById('img_canvas');
     const ctx = img_canvas.getContext('2d');
 
@@ -132,7 +168,10 @@ function hello() {
                         {"img_cv": img_canvas_bw_h, "img_ctx": ctx_bw_h, "result_div": "bw_h_words"}
         ];
 
-        scan(img_list, img_list[3].img_cv, img_list[3].img_ctx, img_list[3].result_div, 2);
+        scan(img_list, img_list[3].img_cv, img_list[3].img_ctx, img_list[3].result_div, worker_bw_h);
+        scan(img_list, img_list[2].img_cv, img_list[2].img_ctx, img_list[2].result_div, worker_bw_v);
+        scan(img_list, img_list[1].img_cv, img_list[1].img_ctx, img_list[1].result_div, worker_inv_h);
+        scan(img_list, img_list[0].img_cv, img_list[0].img_ctx, img_list[0].result_div, worker_inv_v);
 
       }
     };
@@ -140,10 +179,7 @@ function hello() {
   })();
 }
 
-// BJONES TODO note that worker can only do one image a time. So I need to wait until
-// its ready before doing the next image.
-// TODO find a better way to wait for each image to be scanned.
-function scan(img_list, img_cv, img_ctx, result_div, next) {
+function scan(img_list, img_cv, img_ctx, result_div, worker) {
   let v_b = document.createElement('img');
         v_b.src = img_cv.toDataURL();
         v_b.onload = function() {
@@ -158,12 +194,40 @@ function scan(img_list, img_cv, img_ctx, result_div, next) {
             //Multiple passes currently. So I only need to save one result from that image.
             // bw_v_words = bw_v_words.concat(new_words.data);
 
-            bw_v_words = new_words.data;
-            if (next >= 0) {
-              scan(img_list, img_list[next].img_cv, img_list[next].img_ctx, img_list[next].result_div, next -1);
-            }
+            // bw_v_words = new_words.data;
+            // if (next >= 0) {
+            //   scan(img_list, img_list[next].img_cv, img_list[next].img_ctx, img_list[next].result_div, next -1);
+            // }
             // makeAllBoxes(ctx_inv_v, bw_v_words.words, "green");
           });
 
         }
 }
+
+// BJONES TODO note that worker can only do one image a time. So I need to wait until
+// its ready before doing the next image.
+// TODO find a better way to wait for each image to be scanned.
+// function scan(img_list, img_cv, img_ctx, result_div, next) {
+//   let v_b = document.createElement('img');
+//         v_b.src = img_cv.toDataURL();
+//         v_b.onload = function() {
+//           worker.recognize(v_b).then((new_words) => {
+//             let found_res = find_resistors(new_words.data.words);
+//             let found_cap = find_capacitors(new_words.data.words);
+//             let found_trans = find_transistor(new_words.data.words);
+//             post_results(result_div, found_res, img_ctx);
+//             post_results(result_div, found_cap, img_ctx);
+//             post_results(result_div, found_trans, img_ctx);
+//             //BJONES don't need to concat probably because I'm not making
+//             //Multiple passes currently. So I only need to save one result from that image.
+//             // bw_v_words = bw_v_words.concat(new_words.data);
+
+//             bw_v_words = new_words.data;
+//             if (next >= 0) {
+//               scan(img_list, img_list[next].img_cv, img_list[next].img_ctx, img_list[next].result_div, next -1);
+//             }
+//             // makeAllBoxes(ctx_inv_v, bw_v_words.words, "green");
+//           });
+
+//         }
+// }
