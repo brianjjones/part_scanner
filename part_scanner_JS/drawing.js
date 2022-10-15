@@ -48,6 +48,99 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
     }
   }
 
+  function thickenColor(imgData, thicken_color, amount, fuzz) {
+    for (var i = 0; i < imgData.data.length; i += 4) {
+      if (checkFuzz(imgData.data[i], thicken_color.r, fuzz) ||
+        checkFuzz(imgData.data[i + 1], thicken_color.g, fuzz) ||
+        checkFuzz(imgData.data[i + 2], thicken_color.g, fuzz)
+      ) {
+        let tmp_i = i;
+        imgData.data[i] = thicken_color.r;
+        imgData.data[i + 1] = thicken_color.g;
+        imgData.data[i + 2] = thicken_color.b;
+
+        tmp_i+=4;
+        if (i < imgData.data.length) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+        tmp_i+=4;
+        if (i < imgData.data.length) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+        tmp_i+=4;
+        if (i < imgData.data.length) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+        tmp_i+=4;
+        // if (i < imgData.data.length) {
+        // imgData.data[tmp_i] = thicken_color.r;
+        // imgData.data[tmp_i + 1] = thicken_color.g;
+        // imgData.data[tmp_i + 2] = thicken_color.b;
+        // }
+
+        tmp_i = i;
+        tmp_i-=4;
+        if (tmp_i >= 0) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+        tmp_i-=4;
+        if (tmp_i >= 0) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+
+        tmp_i-=4;
+        if (tmp_i >= 0) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+        // tmp_i-=4;
+        // if (tmp_i >= 0) {
+        // imgData.data[tmp_i] = thicken_color.r;
+        // imgData.data[tmp_i + 1] = thicken_color.g;
+        // imgData.data[tmp_i + 2] = thicken_color.b;
+        // }
+        i += 12
+        // BJONES TODO MAKE THIS WORK
+      //   for (let j = 0; j < amount; j++) {
+      //     let pix = i+4 + (j*4);
+      //     if (i < imgData.data.length) {
+      //       imgData.data[i] = thicken_color.r;
+      //       imgData.data[i + 1] = thicken_color.g;
+      //       imgData.data[i + 2] = thicken_color.b;
+      //     }
+      //   }
+
+      //   for (let j = 0; j < amount; j++) {
+      //     let pix = i-4 - (j*4);
+      //   if (i >= 0) {
+      //     imgData.data[i] = thicken_color.r;
+      //     imgData.data[i + 1] = thicken_color.g;
+      //     imgData.data[i + 2] = thicken_color.b;
+      //   }
+      // }
+
+        // imgData.data[i] = thicken_color.r;
+        // imgData.data[i + 1] = thicken_color.g;
+        // imgData.data[i + 2] = thicken_color.b;
+
+        // imgData.data[i] = thicken_color.r;
+        // imgData.data[i + 1] = thicken_color.g;
+        // imgData.data[i + 2] = thicken_color.b;
+      }
+    }
+  }
+
   function makeBox(ctx, word_data, color) {
       ctx.beginPath();
       ctx.strokeStyle = color;
@@ -96,8 +189,13 @@ function getColorAtPixel(imageData, x, y) {
     data[4 * (width * y + x) + 3] = color.a & 0xff
   }
 
-  function colorMatch(a, b) {
+  function colorMatchOrig(a, b) {
     return a.r === b.r && a.g === b.g && a.b === b.b && a.a === b.a
+  }
+
+  function colorMatch(a, b) {
+    // if (checkFuzz(a.r, b.r, 20) )
+    return checkFuzz(a.r, b.r, 60) && checkFuzz(a.g, b.g, 60) && checkFuzz(a.b, b.b, 60) && checkFuzz(a.a, b.a, 60)
   }
 
   // floodFill code is from https://codepen.io/Geeyoam/pen/vLGZzG

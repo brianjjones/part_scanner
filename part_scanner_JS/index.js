@@ -21,6 +21,7 @@ let ic_json = [];
 
 const { createWorker } = Tesseract;
 
+// BJONES TODO  can I create multiple workers and do each image at the same time?
 const worker = createWorker({
   // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
   logger: m => console.log(m),
@@ -81,22 +82,27 @@ function hello() {
     img.onload = function () {
 
       img.crossOrigin = "anonymous";
-      img_canvas.height = 1000;//img.height; 825
-      img_canvas.width = 1000;//img.width;944
+      img_canvas.height = 1500;//img.height; 825
+      img_canvas.width = 1500;//img.width;944
       const col = {r: 0x0, g: 0x0, b: 0x0, a: 0xff}
       const col2 = {r: 0xff, g: 0xff, b: 0xff, a: 0xff}
 
       if (img.width > 0) {
-        ctx.drawImage(img, 0, 0);
+        ctx.drawImage(img, 0, 0, img_canvas.width, img_canvas.height);
         let img_data_b = ctx.getImageData(0, 0, img_canvas.width, img_canvas.height);
         let img_data_w = ctx.getImageData(0, 0, img_canvas.width, img_canvas.height);
         // TODO change this to only change the data, don't pass canvas stuff
-        floodFill(img_data_b, col, 0, 0);
-        floodFill(img_data_b, col2, 0, 0);
+        floodFill(img_data_b, col, 10, 10);
+        // floodFill(img_data_b, col2, 10, 10);
 
         // Get black text
         onlyColor(img_data_b, { 'r': 0, 'g': 0, 'b': 0 }, { 'r': 255, 'g': 255, 'b': 255 }, 50);
         ctx_bw_h.putImageData(img_data_b, 0, 0);
+        thickenColor(img_data_b, { 'r': 0, 'g': 0, 'b': 0 }, 4, 100);
+        ctx_bw_h.putImageData(img_data_b, 0, 0);
+        // ctx_bw_h.putImageData(img_data_b, 1, 0);
+        // ctx_bw_h.putImageData(img_data_b, 0, 1);
+        // ctx_bw_h.putImageData(img_data_b, 0, 0);
 
         // Rotated black text
         let rotimg_gen = document.createElement('img');
@@ -106,8 +112,8 @@ function hello() {
         }
 
         // Get white text
-        floodFill(img_data_w, col, 0, 0);
-        onlyColor(img_data_w, { 'r': 255, 'g': 255, 'b': 255 }, { 'r': 0, 'g': 0, 'b': 0 }, 50);
+        floodFill(img_data_w, col, 10, 10);
+        onlyColor(img_data_w, { 'r': 255, 'g': 255, 'b': 255 }, { 'r': 0, 'g': 0, 'b': 0 }, 60);
         invertData(img_data_w);
         ctx_inv_h.putImageData(img_data_w, 0, 0);
 
