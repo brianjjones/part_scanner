@@ -134,8 +134,8 @@ function hello() {
         // Get black text
         onlyColor(img_data_b, { 'r': 0, 'g': 0, 'b': 0 }, { 'r': 255, 'g': 255, 'b': 255 }, 50);
         ctx_bw_h.putImageData(img_data_b, 0, 0);
-        thickenColor(img_data_b, { 'r': 0, 'g': 0, 'b': 0 }, 4, 100);
-        ctx_bw_h.putImageData(img_data_b, 0, 0);
+        // thickenColor(img_data_b, img_canvas.width, { 'r': 0, 'g': 0, 'b': 0 }, 4, 50);
+        // ctx_bw_h.putImageData(img_data_b, 0, 0);
         // ctx_bw_h.putImageData(img_data_b, 1, 0);
         // ctx_bw_h.putImageData(img_data_b, 0, 1);
         // ctx_bw_h.putImageData(img_data_b, 0, 0);
@@ -167,7 +167,14 @@ function hello() {
                         {"img_cv": img_canvas_bw_v, "img_ctx": ctx_bw_v, "result_div": "bw_v_words"},
                         {"img_cv": img_canvas_bw_h, "img_ctx": ctx_bw_h, "result_div": "bw_h_words"}
         ];
+        for (let i = 0; i < img_list.length; i++) {
+              // Clear the list first
+        var element = document.getElementById(img_list[i].result_div);
+        while (element.firstChild) {
+          element.removeChild(element.firstChild);
+          }
 
+        }
         scan(img_list, img_list[3].img_cv, img_list[3].img_ctx, img_list[3].result_div, worker_bw_h);
         scan(img_list, img_list[2].img_cv, img_list[2].img_ctx, img_list[2].result_div, worker_bw_v);
         scan(img_list, img_list[1].img_cv, img_list[1].img_ctx, img_list[1].result_div, worker_inv_h);

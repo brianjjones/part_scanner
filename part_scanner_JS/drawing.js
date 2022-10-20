@@ -48,16 +48,33 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
     }
   }
 
-  function thickenColor(imgData, thicken_color, amount, fuzz) {
+  function thickenColor(imgData, width, thicken_color, amount, fuzz) {
     for (var i = 0; i < imgData.data.length; i += 4) {
       if (checkFuzz(imgData.data[i], thicken_color.r, fuzz) ||
         checkFuzz(imgData.data[i + 1], thicken_color.g, fuzz) ||
         checkFuzz(imgData.data[i + 2], thicken_color.g, fuzz)
       ) {
+
         let tmp_i = i;
-        imgData.data[i] = thicken_color.r;
-        imgData.data[i + 1] = thicken_color.g;
-        imgData.data[i + 2] = thicken_color.b;
+        tmp_i+=4;
+        if (i < imgData.data.length) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+
+        vert_i = tmp_i - (width * 4 )
+        if (i < imgData.data.length && tmp_i >= 0) {
+          imgData.data[vert_i] = thicken_color.r;
+          imgData.data[vert_i + 1] = thicken_color.g;
+          imgData.data[vert_i + 2] = thicken_color.b;
+          }
+          // vert_i = tmp_i - (width * 4 * 2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[vert_i] = thicken_color.r;
+          //   imgData.data[vert_i + 1] = thicken_color.g;
+          //   imgData.data[vert_i + 2] = thicken_color.b;
+          //   }
 
         tmp_i+=4;
         if (i < imgData.data.length) {
@@ -65,19 +82,39 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
         imgData.data[tmp_i + 1] = thicken_color.g;
         imgData.data[tmp_i + 2] = thicken_color.b;
         }
+        vert_i = tmp_i - (width * 4 )
+        if (i < imgData.data.length && tmp_i >= 0) {
+          imgData.data[vert_i] = thicken_color.r;
+          imgData.data[vert_i + 1] = thicken_color.g;
+          imgData.data[vert_i + 2] = thicken_color.b;
+          }
+          // vert_i = tmp_i - (width * 4 * 2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[vert_i] = thicken_color.r;
+          //   imgData.data[vert_i + 1] = thicken_color.g;
+          //   imgData.data[vert_i + 2] = thicken_color.b;
+          //   }
+
         tmp_i+=4;
         if (i < imgData.data.length) {
         imgData.data[tmp_i] = thicken_color.r;
         imgData.data[tmp_i + 1] = thicken_color.g;
         imgData.data[tmp_i + 2] = thicken_color.b;
         }
-        tmp_i+=4;
-        if (i < imgData.data.length) {
-        imgData.data[tmp_i] = thicken_color.r;
-        imgData.data[tmp_i + 1] = thicken_color.g;
-        imgData.data[tmp_i + 2] = thicken_color.b;
-        }
-        tmp_i+=4;
+        vert_i = tmp_i - (width * 4 )
+        if (i < imgData.data.length && tmp_i >= 0) {
+          imgData.data[vert_i] = thicken_color.r;
+          imgData.data[vert_i + 1] = thicken_color.g;
+          imgData.data[vert_i + 2] = thicken_color.b;
+          }
+          // vert_i = tmp_i - (width * 4 * 2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[vert_i] = thicken_color.r;
+          //   imgData.data[vert_i + 1] = thicken_color.g;
+          //   imgData.data[vert_i + 2] = thicken_color.b;
+          //   }
+
+        // tmp_i+=4;
         // if (i < imgData.data.length) {
         // imgData.data[tmp_i] = thicken_color.r;
         // imgData.data[tmp_i + 1] = thicken_color.g;
@@ -91,12 +128,18 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
         imgData.data[tmp_i + 1] = thicken_color.g;
         imgData.data[tmp_i + 2] = thicken_color.b;
         }
-        tmp_i-=4;
-        if (tmp_i >= 0) {
-        imgData.data[tmp_i] = thicken_color.r;
-        imgData.data[tmp_i + 1] = thicken_color.g;
-        imgData.data[tmp_i + 2] = thicken_color.b;
-        }
+        vert_i = tmp_i - (width * 4 )
+        if (i < imgData.data.length && tmp_i >= 0) {
+          imgData.data[vert_i] = thicken_color.r;
+          imgData.data[vert_i + 1] = thicken_color.g;
+          imgData.data[vert_i + 2] = thicken_color.b;
+          }
+          // vert_i = tmp_i - (width * 4 * 2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[vert_i] = thicken_color.r;
+          //   imgData.data[vert_i + 1] = thicken_color.g;
+          //   imgData.data[vert_i + 2] = thicken_color.b;
+          //   }
 
         tmp_i-=4;
         if (tmp_i >= 0) {
@@ -104,12 +147,67 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
         imgData.data[tmp_i + 1] = thicken_color.g;
         imgData.data[tmp_i + 2] = thicken_color.b;
         }
+        vert_i = tmp_i - (width * 4 )
+        if (i < imgData.data.length && tmp_i >= 0) {
+          imgData.data[vert_i] = thicken_color.r;
+          imgData.data[vert_i + 1] = thicken_color.g;
+          imgData.data[vert_i + 2] = thicken_color.b;
+          }
+          // vert_i = tmp_i - (width * 4 * 2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[vert_i] = thicken_color.r;
+          //   imgData.data[vert_i + 1] = thicken_color.g;
+          //   imgData.data[vert_i + 2] = thicken_color.b;
+          //   }
+
+        tmp_i-=4;
+        if (tmp_i >= 0) {
+        imgData.data[tmp_i] = thicken_color.r;
+        imgData.data[tmp_i + 1] = thicken_color.g;
+        imgData.data[tmp_i + 2] = thicken_color.b;
+        }
+        vert_i = tmp_i - (width * 4 )
+        if (i < imgData.data.length && tmp_i >= 0) {
+          imgData.data[vert_i] = thicken_color.r;
+          imgData.data[vert_i + 1] = thicken_color.g;
+          imgData.data[vert_i + 2] = thicken_color.b;
+          }
+          // vert_i = tmp_i - (width * 4 * 2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[vert_i] = thicken_color.r;
+          //   imgData.data[vert_i + 1] = thicken_color.g;
+          //   imgData.data[vert_i + 2] = thicken_color.b;
+          //   }
+
         // tmp_i-=4;
         // if (tmp_i >= 0) {
         // imgData.data[tmp_i] = thicken_color.r;
         // imgData.data[tmp_i + 1] = thicken_color.g;
         // imgData.data[tmp_i + 2] = thicken_color.b;
         // }
+
+
+
+          // tmp_i = i - (width * 4 *2)
+          // if (i < imgData.data.length && tmp_i >= 0) {
+          //   imgData.data[tmp_i] = 0;
+          //   imgData.data[tmp_i + 1] = 100;
+          //   imgData.data[tmp_i + 2] = 0;
+          //   }
+          // tmp_i = i + (width * 4 * 3)
+          // if (i < imgData.data.length) {
+          //   imgData.data[tmp_i] = thicken_color.r;
+          //   imgData.data[tmp_i + 1] = thicken_color.g;
+          //   imgData.data[tmp_i + 2] = thicken_color.b;
+          //   }
+
+          //   tmp_i = i + (width * 4 * 4)
+          //   if (i < imgData.data.length) {
+          //     imgData.data[tmp_i] = thicken_color.r;
+          //     imgData.data[tmp_i + 1] = thicken_color.g;
+          //     imgData.data[tmp_i + 2] = thicken_color.b;
+          //     }
+
         i += 12
         // BJONES TODO MAKE THIS WORK
       //   for (let j = 0; j < amount; j++) {

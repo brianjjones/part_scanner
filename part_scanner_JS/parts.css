@@ -8,17 +8,28 @@
   }
 
 div.result {
-    background-color: red;
+    background-color: green;
     color: lightblue;
     font-size: 30px;
     transition: all .2s ease-in-out;
 }
 
 div.result:hover {
-    background-color: green;
+    background-color: yellow;
     /* transform: scale(1.1); */
 }
 
+div.reject {
+  background-color: red;
+  color: lightblue;
+  font-size: 30px;
+  transition: all .2s ease-in-out;
+}
+
+div.reject:hover {
+  background-color: blue;
+  /* transform: scale(1.1); */
+}
 .column {
     float: left;
   }
