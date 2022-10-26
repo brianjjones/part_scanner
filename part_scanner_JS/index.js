@@ -1,3 +1,9 @@
+// TODO OCT 25 - Selection now works. So I need to change the following.
+// - Don't convert images immediately, make a sepearate function
+// - Don't search immediately
+// - DO get the image immediately
+// - Upon selection, then convert the image and search for parts.
+
 // TODO July 12 - I can get a black and white image fine, now see if I can get the white text too.
 // After that, I should be able to get the 4 images I have in the python version. Copy box.py as much as possible
 // To avoid rework. Call the file 'box.js' to keep the code cleaner.
@@ -18,6 +24,9 @@ let dup_words = [];
 let caps_json = [];
 let resistor_json = [];
 let ic_json = [];
+let rec_start = undefined;
+let rec_end = undefined;
+
 
 const { createWorker } = Tesseract;
 
@@ -28,17 +37,14 @@ const worker_bw_h = createWorker({
 });
 
 const worker_bw_v = createWorker({
-  // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
   logger: m => console.log(m),
 });
 
 const worker_inv_h = createWorker({
-  // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
   logger: m => console.log(m),
 });
 
 const worker_inv_v = createWorker({
-  // langPath: 'https://github.com/naptha/tesseract.js/raw/master/tests/assets/traineddata/',
   logger: m => console.log(m),
 });
 
@@ -69,9 +75,21 @@ const worker_inv_v = createWorker({
 })();
 
 
+function clear_div(div_name, selector) {
+  const parents = document.querySelectorAll(div_name);
+  // const items = parent.querySelectorAll(selector);
 
+  parents.forEach(parent => {
+    const items = parent.querySelectorAll(selector);
+    items.forEach(item => {
+      item.remove();
+    });
+  });
+}
 
 function hello() {
+  clear_div(".results", ".reject");
+  clear_div(".results", ".result");
   console.log("HELLO!!! things should be loaded");
   // RESET THE WORDS
   curr_words = [];
@@ -85,19 +103,38 @@ function hello() {
     await worker_bw_v.initialize('eng');
     await worker_inv_h.initialize('eng');
     await worker_inv_v.initialize('eng');
-    const img_canvas = document.getElementById('img_canvas');
-    const ctx = img_canvas.getContext('2d');
 
+    const img_canvas = document.getElementById('img_canvas');
+    img_canvas.addEventListener("mouseup", mouseUp);
+    img_canvas.addEventListener("mousedown", mouseDown);
+
+    const ctx = img_canvas.getContext('2d');
     const img_canvas_bw_h = document.getElementById('img_canvas_bw_h');
+    const img_canvas_bw_v = document.getElementById('img_canvas_bw_v');
+    const img_canvas_inv_h = document.getElementById('img_canvas_inv_h');
+    const img_canvas_inv_v = document.getElementById('img_canvas_inv_v');
+    img_canvas.width = document.getElementById("img_canvas").offsetWidth;
+    img_canvas.height = document.getElementById("img_canvas").offsetHeight;
+
+
+    //BJONES TODO - THIS SEEMS TO FAIL BECAUSE MAYBE ITS TOO BIG? MAKES IT NOT FIND PARTS
+    // yEAH Going smaller is faster. So maybe there's a sweet spot
+    // NEXT TODO: Get highlight scan working. Then I can have a larger image of just what I want to scan.
+
+    // img_canvas_bw_h.width = img_canvas_inv_h.width = img_canvas_bw_v.height = img_canvas_inv_v.height = img_canvas.width;
+    // img_canvas_bw_h.height = img_canvas_inv_h.height = img_canvas_bw_v.width = img_canvas_inv_v.width = img_canvas.height;
+
+
+
     const ctx_bw_h = img_canvas_bw_h.getContext('2d');
 
-    const img_canvas_bw_v = document.getElementById('img_canvas_bw_v');
+
     const ctx_bw_v = img_canvas_bw_v.getContext('2d');
 
-    const img_canvas_inv_h = document.getElementById('img_canvas_inv_h');
+
     const ctx_inv_h = img_canvas_inv_h.getContext('2d');
 
-    const img_canvas_inv_v = document.getElementById('img_canvas_inv_v');
+
     const ctx_inv_v = img_canvas_inv_v.getContext('2d');
 
     const img = new Image();
@@ -112,14 +149,14 @@ function hello() {
     response = await fetch("ic.json");
     ic_json = await response.json();
 
-
     img.src = 'http://4.bp.blogspot.com/-ak7dCtDZGmQ/UOLHj153GNI/AAAAAAAAAYc/BYHzu-jUAOc/s1600/Dan-Armstrong-Red-Ranger.png';
 
     img.onload = function () {
 
       img.crossOrigin = "anonymous";
-      img_canvas.height = 1500;//img.height; 825
-      img_canvas.width = 1500;//img.width;944
+
+
+
       const col = {r: 0x0, g: 0x0, b: 0x0, a: 0xff}
       const col2 = {r: 0xff, g: 0xff, b: 0xff, a: 0xff}
 
@@ -129,15 +166,11 @@ function hello() {
         let img_data_w = ctx.getImageData(0, 0, img_canvas.width, img_canvas.height);
         // TODO change this to only change the data, don't pass canvas stuff
         floodFill(img_data_b, col, 10, 10);
-        // floodFill(img_data_b, col2, 10, 10);
 
         // Get black text
         onlyColor(img_data_b, { 'r': 0, 'g': 0, 'b': 0 }, { 'r': 255, 'g': 255, 'b': 255 }, 50);
         ctx_bw_h.putImageData(img_data_b, 0, 0);
         // thickenColor(img_data_b, img_canvas.width, { 'r': 0, 'g': 0, 'b': 0 }, 4, 50);
-        // ctx_bw_h.putImageData(img_data_b, 0, 0);
-        // ctx_bw_h.putImageData(img_data_b, 1, 0);
-        // ctx_bw_h.putImageData(img_data_b, 0, 1);
         // ctx_bw_h.putImageData(img_data_b, 0, 0);
 
         // Rotated black text
@@ -162,19 +195,19 @@ function hello() {
 
 
         let img_list = [
-                        {"img_cv": img_canvas_inv_v, "img_ctx": ctx_inv_v, "result_div": "inv_v_words"},
-                        {"img_cv": img_canvas_inv_h, "img_ctx": ctx_inv_h, "result_div": "inv_h_words"},
-                        {"img_cv": img_canvas_bw_v, "img_ctx": ctx_bw_v, "result_div": "bw_v_words"},
-                        {"img_cv": img_canvas_bw_h, "img_ctx": ctx_bw_h, "result_div": "bw_h_words"}
+                        {"img_cv": img_canvas_inv_v, "img_ctx": ctx, "result_div": "inv_v_words"},
+                        {"img_cv": img_canvas_inv_h, "img_ctx": ctx, "result_div": "inv_h_words"},
+                        {"img_cv": img_canvas_bw_v, "img_ctx": ctx, "result_div": "bw_v_words"},
+                        {"img_cv": img_canvas_bw_h, "img_ctx": ctx, "result_div": "bw_h_words"}
         ];
-        for (let i = 0; i < img_list.length; i++) {
-              // Clear the list first
-        var element = document.getElementById(img_list[i].result_div);
-        while (element.firstChild) {
-          element.removeChild(element.firstChild);
-          }
+        // for (let i = 0; i < img_list.length; i++) {
+        //       // Clear the list first
+        // var element = document.getElementById(img_list[i].result_div);
+        // while (element.firstChild) {
+        //   element.removeChild(element.firstChild);
+        //   }
 
-        }
+        // }
         scan(img_list, img_list[3].img_cv, img_list[3].img_ctx, img_list[3].result_div, worker_bw_h);
         scan(img_list, img_list[2].img_cv, img_list[2].img_ctx, img_list[2].result_div, worker_bw_v);
         scan(img_list, img_list[1].img_cv, img_list[1].img_ctx, img_list[1].result_div, worker_inv_h);
@@ -184,6 +217,17 @@ function hello() {
     };
 
   })();
+}
+
+function toggle_rejects() {
+  var rejects = document.querySelectorAll(".reject");
+  rejects.forEach(x => {
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  });
 }
 
 function scan(img_list, img_cv, img_ctx, result_div, worker) {
@@ -209,6 +253,30 @@ function scan(img_list, img_cv, img_ctx, result_div, worker) {
           });
 
         }
+}
+
+function makeSelection(x0, y0, x1, y1, color) {
+  const img_canvas = document.getElementById('img_canvas');
+  const ctx = img_canvas.getContext('2d');
+  ctx.beginPath();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 4;
+  console.log("BJONES DRAWING SELECTION " + x0 + ", " + y0 + ", " + x1 + ", " + y1 + ", ");
+  ctx.rect(x0, y0, x1 - x0, y1 - y0);
+  ctx.stroke();
+}
+
+function mouseDown(e) {
+  console.log("TESTING!");
+  rec_start = [e.offsetX, e.offsetY];
+}
+
+function mouseUp(e) {
+  console.log("TESTING!");
+  rec_end = [e.offsetX, e.offsetY];
+  makeSelection(rec_start[0], rec_start[1], rec_end[0], rec_end[1], "purple");
+  rec_end = undefined;
+  rec_start = undefined;
 }
 
 // BJONES TODO note that worker can only do one image a time. So I need to wait until

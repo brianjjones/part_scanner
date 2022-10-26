@@ -1,3 +1,4 @@
+
 // TODO change num1 to {r,g,b}?
 function checkFuzz(num1, num2, fuzz) {
     return Math.abs(num1 - num2) < fuzz;
@@ -17,10 +18,6 @@ function invertData(imgData) {
 
     for (var i = 0; i < imgData.data.length; i += 4) {
 
-      // if (imgData.data[i] == find_color.r &&
-      //   imgData.data[i + 1] == find_color.g &&
-      //   imgData.data[i + 2] == find_color.b
-      // ) {
       if (checkFuzz(imgData.data[i], find_color.r, fuzz) &&
         checkFuzz(imgData.data[i + 1], find_color.g, fuzz) &&
         checkFuzz(imgData.data[i + 2], find_color.g, fuzz)
@@ -69,12 +66,6 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
           imgData.data[vert_i + 1] = thicken_color.g;
           imgData.data[vert_i + 2] = thicken_color.b;
           }
-          // vert_i = tmp_i - (width * 4 * 2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[vert_i] = thicken_color.r;
-          //   imgData.data[vert_i + 1] = thicken_color.g;
-          //   imgData.data[vert_i + 2] = thicken_color.b;
-          //   }
 
         tmp_i+=4;
         if (i < imgData.data.length) {
@@ -88,12 +79,6 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
           imgData.data[vert_i + 1] = thicken_color.g;
           imgData.data[vert_i + 2] = thicken_color.b;
           }
-          // vert_i = tmp_i - (width * 4 * 2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[vert_i] = thicken_color.r;
-          //   imgData.data[vert_i + 1] = thicken_color.g;
-          //   imgData.data[vert_i + 2] = thicken_color.b;
-          //   }
 
         tmp_i+=4;
         if (i < imgData.data.length) {
@@ -107,19 +92,6 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
           imgData.data[vert_i + 1] = thicken_color.g;
           imgData.data[vert_i + 2] = thicken_color.b;
           }
-          // vert_i = tmp_i - (width * 4 * 2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[vert_i] = thicken_color.r;
-          //   imgData.data[vert_i + 1] = thicken_color.g;
-          //   imgData.data[vert_i + 2] = thicken_color.b;
-          //   }
-
-        // tmp_i+=4;
-        // if (i < imgData.data.length) {
-        // imgData.data[tmp_i] = thicken_color.r;
-        // imgData.data[tmp_i + 1] = thicken_color.g;
-        // imgData.data[tmp_i + 2] = thicken_color.b;
-        // }
 
         tmp_i = i;
         tmp_i-=4;
@@ -134,12 +106,6 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
           imgData.data[vert_i + 1] = thicken_color.g;
           imgData.data[vert_i + 2] = thicken_color.b;
           }
-          // vert_i = tmp_i - (width * 4 * 2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[vert_i] = thicken_color.r;
-          //   imgData.data[vert_i + 1] = thicken_color.g;
-          //   imgData.data[vert_i + 2] = thicken_color.b;
-          //   }
 
         tmp_i-=4;
         if (tmp_i >= 0) {
@@ -153,12 +119,6 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
           imgData.data[vert_i + 1] = thicken_color.g;
           imgData.data[vert_i + 2] = thicken_color.b;
           }
-          // vert_i = tmp_i - (width * 4 * 2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[vert_i] = thicken_color.r;
-          //   imgData.data[vert_i + 1] = thicken_color.g;
-          //   imgData.data[vert_i + 2] = thicken_color.b;
-          //   }
 
         tmp_i-=4;
         if (tmp_i >= 0) {
@@ -172,69 +132,8 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
           imgData.data[vert_i + 1] = thicken_color.g;
           imgData.data[vert_i + 2] = thicken_color.b;
           }
-          // vert_i = tmp_i - (width * 4 * 2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[vert_i] = thicken_color.r;
-          //   imgData.data[vert_i + 1] = thicken_color.g;
-          //   imgData.data[vert_i + 2] = thicken_color.b;
-          //   }
-
-        // tmp_i-=4;
-        // if (tmp_i >= 0) {
-        // imgData.data[tmp_i] = thicken_color.r;
-        // imgData.data[tmp_i + 1] = thicken_color.g;
-        // imgData.data[tmp_i + 2] = thicken_color.b;
-        // }
-
-
-
-          // tmp_i = i - (width * 4 *2)
-          // if (i < imgData.data.length && tmp_i >= 0) {
-          //   imgData.data[tmp_i] = 0;
-          //   imgData.data[tmp_i + 1] = 100;
-          //   imgData.data[tmp_i + 2] = 0;
-          //   }
-          // tmp_i = i + (width * 4 * 3)
-          // if (i < imgData.data.length) {
-          //   imgData.data[tmp_i] = thicken_color.r;
-          //   imgData.data[tmp_i + 1] = thicken_color.g;
-          //   imgData.data[tmp_i + 2] = thicken_color.b;
-          //   }
-
-          //   tmp_i = i + (width * 4 * 4)
-          //   if (i < imgData.data.length) {
-          //     imgData.data[tmp_i] = thicken_color.r;
-          //     imgData.data[tmp_i + 1] = thicken_color.g;
-          //     imgData.data[tmp_i + 2] = thicken_color.b;
-          //     }
 
         i += 12
-        // BJONES TODO MAKE THIS WORK
-      //   for (let j = 0; j < amount; j++) {
-      //     let pix = i+4 + (j*4);
-      //     if (i < imgData.data.length) {
-      //       imgData.data[i] = thicken_color.r;
-      //       imgData.data[i + 1] = thicken_color.g;
-      //       imgData.data[i + 2] = thicken_color.b;
-      //     }
-      //   }
-
-      //   for (let j = 0; j < amount; j++) {
-      //     let pix = i-4 - (j*4);
-      //   if (i >= 0) {
-      //     imgData.data[i] = thicken_color.r;
-      //     imgData.data[i + 1] = thicken_color.g;
-      //     imgData.data[i + 2] = thicken_color.b;
-      //   }
-      // }
-
-        // imgData.data[i] = thicken_color.r;
-        // imgData.data[i + 1] = thicken_color.g;
-        // imgData.data[i + 2] = thicken_color.b;
-
-        // imgData.data[i] = thicken_color.r;
-        // imgData.data[i + 1] = thicken_color.g;
-        // imgData.data[i + 2] = thicken_color.b;
       }
     }
   }
@@ -362,3 +261,5 @@ function getColorAtPixel(imageData, x, y) {
     ctx.drawImage(img, -img.width/2, -img.width/2);
     ctx.restore();
   }
+
+
