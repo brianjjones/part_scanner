@@ -1,5 +1,5 @@
 
-function post_results(list_id, words, ctx) {
+function post_results(list_id, words, ctx, can, rotate) {
   if (words.length === 0)
     return;
 
@@ -12,20 +12,31 @@ function post_results(list_id, words, ctx) {
     let word_arr = words; //.words;
     for (let i = 0; i < word_arr.length; i++ ){
       var para = document.createElement("div");
+      var close_button = document.createElement("button");
+      close_button.id = "close_" + i;
+
+      close_button.innerText = "(X)";
+
       para.id = "word_" + i;
-      if (word_arr[i].rejected) {
-        para.classList.add("reject");
-      } else {
-        para.classList.add("result");
-      }
+
       // para.onmouseover = makeBox(ctx, word_arr[i], "red");
       para.bbox = word_arr[i].bbox;
       para.addEventListener('click', check_box);
+      para.rotate = rotate;
       para.ctx = ctx;
       para.canvas_name = "img_canvas_bw_v"; // BJONES FIX THIS HARDCODE
+      para.can = can;
       para.word_data = word_arr[i];
       para.innerText = word_arr[i].text + " -> " + word_arr[i].bbox.x0 + "," + word_arr[i].bbox.y0 + "," + word_arr[i].bbox.x1 + "," + word_arr[i].bbox.y1;
-
+      if (word_arr[i].rejected) {
+        para.classList.add("reject");
+        para.color = 'rgba(200,0,0,0.5)';
+      } else {
+        para.classList.add("result");
+        para.color = 'rgba(0,200,0,0.5)'
+        // makeBox(para.ctx, para.word_data, para.rotate, "blue");
+      }
+      para.append(close_button);
       element.appendChild(para);
     }
   }
@@ -43,7 +54,13 @@ function check_box(e) {
   //   document.getElementById("img_canvas").style.display = "block";
   // }
 
-  makeBox(e.target.ctx, e.target.word_data, "red");
+  makeBox(e.target.ctx, e.target.word_data, e.target.rotate, e.target.can, e.target.color);
+  // Toggle the canvas.
+  // if (e.target.can.style.display === "none") {
+  //     e.target.can.style.display = "block";
+  //   } else {
+  //     e.target.can.style.display = "none";
+  //   }
   console.log(e.target.bbox.x0 + ", " + e.target.bbox.y0 + ", " + e.target.bbox.x1 + ", " + e.target.bbox.y1);
 }
 // Returns word objects containing resistors

@@ -17,18 +17,20 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="pics" class="column">
+  <!-- <div id="main"> -->
+    <div id="pics" >
       <canvas id="img_canvas" style="border:1px solid green"></canvas>
-      <canvas id="img_canvas_invis" class="drawcanvas" width="2000" height="2000" style="border:1px solid red"></canvas>
-      <canvas id="img_canvas_bw_h" class="drawcanvas" width="2000" height="1000" style="border:1px solid red"></canvas>
-      <canvas id="img_canvas_bw_v" class="drawcanvas" width="1000" height="2000" style="border:1px solid blue"></canvas>
-      <canvas id="img_canvas_inv_h" class="drawcanvas" width="2000" height="1000" style="border:1px solid cyan"></canvas>
-      <canvas id="img_canvas_inv_v" class="drawcanvas" width="1000" height="2000" style="border:1px solid purple"></canvas>
+      <canvas id="img_canvas_overlay" style="border:1px solid green"></canvas>
+      <!-- <canvas id="img_canvas_draw" class="drawcanvas" width="2000" height="2000" style="border:1px solid red"></canvas> -->
+      <canvas id="img_canvas_bw_h" class="drawcanvas_h" style="border:1px solid red"></canvas>
+      <canvas id="img_canvas_bw_v" class="drawcanvas_v" style="border:1px solid blue"></canvas>
+      <canvas id="img_canvas_inv_h" class="drawcanvas_h" style="border:1px solid cyan"></canvas>
+      <canvas id="img_canvas_inv_v" class="drawcanvas_v" style="border:1px solid purple"></canvas>
 
     </div>
     <div id="parttext" class="column">
-      <button onclick="hello()">CHECK!!!</button>
+      <!-- <button onclick="hello()">CHECK!!!</button> -->
+      <button onclick="run()">RUN</button>
       <button id="rejects_toggle" onclick="toggle_rejects()">REJECTS</button>
       <div id="bw_h_words" class="results" width="1000" height="1000" style="border:3px solid yellowgreen">"bw_h_words!"</div>
       <div id="bw_v_words" class="results" width="1000" height="1000" style="border:3px solid yellowgreen">"bw_v_words!"</div>
@@ -38,7 +40,11 @@
     </div>
 
 
-  </div>
+  <!-- </div> -->
+  <!-- <canvas id="img_canvas_bw_h" class="drawcanvas_h" style="border:1px solid red"></canvas>
+  <canvas id="img_canvas_bw_v" class="drawcanvas_v" style="border:1px solid blue"></canvas>
+  <canvas id="img_canvas_inv_h" class="drawcanvas_h" style="border:1px solid cyan"></canvas>
+  <canvas id="img_canvas_inv_v" class="drawcanvas_v" style="border:1px solid purple"></canvas> -->
 </body>
 
 </html>

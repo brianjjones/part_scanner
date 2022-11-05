@@ -138,13 +138,57 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
     }
   }
 
-  function makeBox(ctx, word_data, color) {
+  function makeBox(ctx, word_data, rotate, can, color) {
+    console.log("BJONES box coords before rotate = " + word_data.bbox.x0 + ", " + word_data.bbox.y0 + ", " + word_data.bbox.x1 + ", " + word_data.bbox.y1);
+    ctx.fillStyle = color;
+    if (rotate) {
+      ctx.clearRect(0,0,can.height, can.width);
+      //              0,     90     180     270
+      // BJONES black is correct but too far down.
+      // let colors = ['green', 'red', 'blue', 'black'];
+      // let degrees = -90;
+      // for (let i = 0; i < 4; i++){
+        // degrees += 90;
+      let degrees = 270;
+        ctx.save();
+        // ctx.fillStyle = color;
+        // ctx.translate(can.width/2, can.height/2);
+        ctx.translate(can.height/2, can.width/2); // These are reversed because the canvas we are passing is vertical
+        ctx.rotate(degrees*Math.PI/180);
+        ctx.beginPath();
+        ctx.lineWidth = 6;
+
+        ctx.stroke();
+        ctx.strokeStyle = 'black';
+
+
+        console.log("BJONES DRAWING rotated BOX " + word_data.bbox.x0 + ", " + word_data.bbox.y0 + ", " + word_data.bbox.x1 + ", " + word_data.bbox.y1 + ", ");
+        console.log("BJONES can width/h and - " + can.width + ", " + can.height + "  " + (-can.width) + ", " + (-can.height));
+        ctx.fillRect(-can.width/2 + word_data.bbox.x0 - 5, -can.height/2 + word_data.bbox.y0 - 5, word_data.bbox.x1 - word_data.bbox.x0 + 10, word_data.bbox.y1 - word_data.bbox.y0 + 10);
+        // ctx.rect(-can.width + word_data.bbox.x0, -can.height + word_data.bbox.y0, word_data.bbox.x1 - word_data.bbox.x0, word_data.bbox.y1 - word_data.bbox.y0);
+        ctx.stroke();
+        // ctx.lineWidth = 16;
+          // ctx.rect(-can.width/3, -can.height/3, can.width/3, can.height/3);
+          // ctx.rect(0, 0, can.width/3, can.height/3);
+          // ctx.stroke();
+          // ctx.strokeStyle = "purple";
+          // ctx.rect(0, 0, can.width/4, can.height/4);
+        // ctx.stroke();
+        // ctx.drawImage(img, -img.width/2, -img.height/2);
+        ctx.restore();
+      // }
+    } else {
+      ctx.clearRect(0,0,can.width, can.height);
       ctx.beginPath();
       ctx.strokeStyle = color;
       ctx.lineWidth = 2;
       console.log("BJONES DRAWING BOX " + word_data.bbox.x0 + ", " + word_data.bbox.y0 + ", " + word_data.bbox.x1 + ", " + word_data.bbox.y1 + ", ");
-      ctx.rect(word_data.bbox.x0, word_data.bbox.y0, word_data.bbox.x1 - word_data.bbox.x0, word_data.bbox.y1 - word_data.bbox.y0);
+      ctx.fillRect(word_data.bbox.x0 - 5, word_data.bbox.y0 - 5, word_data.bbox.x1 - word_data.bbox.x0 + 10, word_data.bbox.y1 - word_data.bbox.y0 + 10);
       ctx.stroke();
+      // if (rotate) {
+      //   ctx.restore();
+      // }
+    }
   }
 
   function makeAllBoxes(ctx, word_data, color) {
@@ -254,12 +298,10 @@ function getColorAtPixel(imageData, x, y) {
   }
 
   function rotate(ctx, degrees, width, height, img){
-    ctx.clearRect(0,0,width,height);
+    // ctx.clearRect(0,0,width,height);
     ctx.save();
     ctx.translate(width/2, height/2);
     ctx.rotate(degrees*Math.PI/180);
-    ctx.drawImage(img, -img.width/2, -img.width/2);
+    ctx.drawImage(img, -img.width/2, -img.height/2);
     ctx.restore();
   }
-
-
