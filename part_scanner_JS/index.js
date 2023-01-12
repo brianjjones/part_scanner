@@ -44,7 +44,7 @@ let img_canvas;
 // let draw_canvas;
 // let draw_ctx;
 let ctx;
-const { createWorker } = Tesseract;
+const { createWorker, PSM } = Tesseract;
 
 // BJONES TODO  can I create multiple workers and do each image at the same time?
 const worker_bw_h = createWorker({
@@ -64,33 +64,89 @@ const worker_inv_v = createWorker({
   logger: m => console.log(m),
 });
 
+// (async () => {
+//   // await worker_bw_h.load();
+//   await worker_bw_h;
+
+//   await worker_bw_h.loadLanguage('eng');
+//   console.log("LOADED");
+//   await worker_bw_h.initialize('eng');
+//   console.log(" worker_bw_h INITIALIZED");
+
+//   await worker_bw_v.load();
+//   await worker_bw_v.loadLanguage('eng');
+//   console.log("LOADED");
+//   await worker_bw_v.initialize('eng');
+//   console.log("worker_bw_v INITIALIZED");
+
+//   await worker_inv_h.load();
+//   await worker_inv_h.loadLanguage('eng');
+//   console.log("LOADED");
+//   await worker_inv_h.initialize('eng');
+//   console.log("worker_inv_h INITIALIZED");
+
+//   await worker_inv_v.load();
+//   await worker_inv_v.loadLanguage('eng');
+//   console.log("LOADED");
+//   await worker_inv_v.initialize('eng');
+//   console.log("worker_inv_v INITIALIZED");
+//   hello();
+// })();
+
 (async () => {
-  await worker_bw_h.load();
+  // await worker_bw_h.load();
+  await worker_bw_h;
+  worker_bw_h.load();
   await worker_bw_h.loadLanguage('eng');
   console.log("LOADED");
   await worker_bw_h.initialize('eng');
+  await worker_bw_h.setParameters({
+    // tessedit_char_whitelist: '0123456789rRFUNfunpPKkMm.,Ω ',
+    tessedit_ocr_engine_mode: "1",
+    tessedit_pageseg_mode: PSM.SINGLE_COLUMN, //"PSM_SPARSE_TEXT", //GOOD -> PSM.RAW_LINE
+  });
+
   console.log(" worker_bw_h INITIALIZED");
 
+  await worker_bw_v;
   await worker_bw_v.load();
+
   await worker_bw_v.loadLanguage('eng');
+
   console.log("LOADED");
   await worker_bw_v.initialize('eng');
   console.log("worker_bw_v INITIALIZED");
+  await worker_bw_v.setParameters({
+    // tessedit_char_whitelist: '0123456789rRFUNfunpPKkMm.,Ω ',
+    tessedit_ocr_engine_mode: "1",
+    tessedit_pageseg_mode: PSM.SINGLE_COLUMN,
+  });
 
-  await worker_inv_h.load();
+  await worker_inv_h;
+  worker_inv_h.load();
   await worker_inv_h.loadLanguage('eng');
   console.log("LOADED");
   await worker_inv_h.initialize('eng');
   console.log("worker_inv_h INITIALIZED");
+  await worker_inv_h.setParameters({
+    // tessedit_char_whitelist: '0123456789rRFUNfunpPKkMm.,Ω ',
+    tessedit_ocr_engine_mode: "1",
+    tessedit_pageseg_mode: PSM.SINGLE_COLUMN, //"PSM_SPARSE_TEXT",
+  });
 
-  await worker_inv_v.load();
+  await worker_inv_v;
+  worker_inv_v.load();
   await worker_inv_v.loadLanguage('eng');
   console.log("LOADED");
   await worker_inv_v.initialize('eng');
   console.log("worker_inv_v INITIALIZED");
-  hello();
-})();
+  await worker_inv_v.setParameters({
+      // tessedit_char_whitelist: '0123456789rRFUNfunpPKkMm.,Ω ',
+      tessedit_ocr_engine_mode: "1",
+      tessedit_pageseg_mode: PSM.SINGLE_COLUMN, //"PSM_SPARSE_TEXT",
+    });
 
+})();
 
 function clear_div(div_name, selector) {
   const parents = document.querySelectorAll(div_name);
@@ -116,10 +172,10 @@ function hello() {
   inv_v_words = [];
   (async () => {
 
-    await worker_bw_h.initialize('eng');
-    await worker_bw_v.initialize('eng');
-    await worker_inv_h.initialize('eng');
-    await worker_inv_v.initialize('eng');
+    // await worker_bw_h.initialize('eng');
+    // await worker_bw_v.initialize('eng');
+    // await worker_inv_h.initialize('eng');
+    // await worker_inv_v.initialize('eng');
 
     let pics_div = document.getElementById('pics');
     // let main_div = document.getElementById('main');
@@ -270,6 +326,7 @@ function run () {
     scan(img_canvas_inv_h, ctx_overlay, "inv_h_words", worker_inv_h, false);
   }
 }
+
 function toggle_rejects() {
   var rejects = document.querySelectorAll(".reject");
   rejects.forEach(x => {
@@ -278,6 +335,13 @@ function toggle_rejects() {
     } else {
       x.style.display = "none";
     }
+  });
+}
+
+function highlight_all() {
+  var results = document.querySelectorAll(".result");
+  results.forEach(x => {
+    makeBox(x.ctx, x.word_data, x.rotate, x.can, x.color);
   });
 }
 

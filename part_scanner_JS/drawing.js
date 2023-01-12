@@ -142,7 +142,10 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
     console.log("BJONES box coords before rotate = " + word_data.bbox.x0 + ", " + word_data.bbox.y0 + ", " + word_data.bbox.x1 + ", " + word_data.bbox.y1);
     ctx.fillStyle = color;
     if (rotate) {
-      ctx.clearRect(0,0,can.height, can.width);
+
+      //BJONES I should make a seperate call for this, or arg that you can pass.
+      //ctx.clearRect(0,0,can.height, can.width);
+
       //              0,     90     180     270
       // BJONES black is correct but too far down.
       // let colors = ['green', 'red', 'blue', 'black'];
@@ -178,7 +181,9 @@ function onlyColor(imgData, find_color, replace_color, fuzz) {
         ctx.restore();
       // }
     } else {
-      ctx.clearRect(0,0,can.width, can.height);
+      // BJONES TODO see above about moving to another function.
+      //ctx.clearRect(0,0,can.width, can.height);
+
       ctx.beginPath();
       ctx.strokeStyle = color;
       ctx.lineWidth = 2;

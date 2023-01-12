@@ -16,7 +16,7 @@ function post_results(list_id, words, ctx, can, rotate) {
       close_button.id = "close_" + i;
 
       close_button.innerText = "(X)";
-
+      close_button.addEventListener('click', edit_text);
       para.id = "word_" + i;
 
       // para.onmouseover = makeBox(ctx, word_arr[i], "red");
@@ -63,6 +63,11 @@ function check_box(e) {
   //   }
   console.log(e.target.bbox.x0 + ", " + e.target.bbox.y0 + ", " + e.target.bbox.x1 + ", " + e.target.bbox.y1);
 }
+
+function edit_text(e) {
+  e.target.parentNode.innerText = "NEW TEXT";
+}
+
 // Returns word objects containing resistors
 function find_resistors(words){
   let matches = [];

@@ -1,4 +1,5 @@
 <script src='https://unpkg.com/tesseract.js@v2.0.0/dist/tesseract.min.js'></script>
+<!-- <script src='https://unpkg.com/tesseract.js@v4.0.2/dist/tesseract.min.js'></script> -->
 <script src="wordfinding.js"></script>
 <script src="drawing.js"></script>
 <script src="index.js"></script>
@@ -16,8 +17,9 @@
 
 </head>
 
-<body>
+<body onload = "hello()">
   <!-- <div id="main"> -->
+
     <div id="pics" >
       <canvas id="img_canvas" style="border:1px solid green"></canvas>
       <canvas id="img_canvas_overlay" style="border:1px solid green"></canvas>
@@ -32,6 +34,7 @@
       <!-- <button onclick="hello()">CHECK!!!</button> -->
       <button onclick="run()">RUN</button>
       <button id="rejects_toggle" onclick="toggle_rejects()">REJECTS</button>
+      <button id="highlight_all_toggle" onclick="highlight_all()">HIGHLIGHT ALL</button>
       <div id="bw_h_words" class="results" width="1000" height="1000" style="border:3px solid yellowgreen">"bw_h_words!"</div>
       <div id="bw_v_words" class="results" width="1000" height="1000" style="border:3px solid yellowgreen">"bw_v_words!"</div>
       <div id="inv_h_words" class="results" width="1000" height="1000" style="border:3px solid yellowgreen">"inv_h_words!"</div>
