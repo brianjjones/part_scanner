@@ -173,8 +173,8 @@ def findText(imgFile):
         j["results"]["posCap"] = sortlist(j["results"]["posCap"])
 
     #TODO make it a command line arg to show the images or not
-    cv2.imshow('img', img)
-    cv2.waitKey(0)
+    # cv2.imshow('img', img)
+    # cv2.waitKey(0)
 
     return findHighest(dataArr)
 
